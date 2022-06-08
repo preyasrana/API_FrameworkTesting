@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.057">
+<testcase classname="Verify Place APIs call" name="Verify Add Place API Successfully" time="3.756">
+<system-out><![CDATA[Given add place payload.....................................................passed
+When user call "addplaceapi" with post http request.........................passed
+Then user verify status code is 200.........................................passed
+And "status" in response body is "OK".......................................passed
+And "scope" in response body is "APP".......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
