@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.057">
-<testcase classname="Verify Place APIs call" name="Verify Add Place API Successfully" time="3.756">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.921">
+<testcase classname="Verify Place APIs call" name="Verify Add Place API Successfully" time="2.713">
 <system-out><![CDATA[Given add place payload.....................................................passed
 When user call "addplaceapi" with post http request.........................passed
 Then user verify status code is 200.........................................passed

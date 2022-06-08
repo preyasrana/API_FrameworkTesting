@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"d800a4d8-7fac-4b76-9d21-c5fe244ba48f","feature":"Verify Place APIs call","scenario":"Verify Add Place API Successfully","start":1654692468779,"group":1,"content":"","tags":"@smoketest,","end":1654692472535,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"0eda8c01-3981-47f9-a38d-2936bae72564","feature":"Verify Place APIs call","scenario":"Verify Add Place API Successfully","start":1654692973309,"group":1,"content":"","tags":"@smoketest,","end":1654692976022,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
