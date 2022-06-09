@@ -12,7 +12,7 @@ Multiparts:		<none>
 Body:
 {
     "accuracy": 100,
-    "name": "Preyas rana",
+    "name": "test user",
     "phone_number": "(+91) 990 123 1111",
     "address": "30, new layout, side 09",
     "website": "https://www.google.com",
@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Thu, 09 Jun 2022 05:07:14 GMT
+Date: Thu, 09 Jun 2022 06:05:53 GMT
 Server: Apache/2.4.41 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "63e548b161f8eefd639e7c4d778a83a5",
+    "place_id": "6300b3b2437339007a078fa90b448b27",
     "scope": "APP",
-    "reference": "fd845ea16db5c6677d9e9380a7ab7460fd845ea16db5c6677d9e9380a7ab7460",
-    "id": "fd845ea16db5c6677d9e9380a7ab7460"
+    "reference": "612e03a8a5d712b77137fb8c352506bc612e03a8a5d712b77137fb8c352506bc",
+    "id": "612e03a8a5d712b77137fb8c352506bc"
 }

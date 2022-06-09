@@ -30,10 +30,12 @@ public class sample extends Utils {
 	Response getresponse;
 	TestDataBuild testdata = new TestDataBuild();
 
-	@Given("add place payload")
-	public void add_place_payload() throws FileNotFoundException {
 
-		response = given().spec(requestspecification()).body(testdata.data_addplace_payload());
+	@Given("add place payload with {string} {string} {string}")
+	public void add_place_payload(String name, String address, String language) throws FileNotFoundException {
+
+		response = given().spec(requestspecification())
+				.body(testdata.data_addplace_payload(name,address,language));
 
 	}
 

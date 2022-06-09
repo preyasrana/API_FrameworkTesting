@@ -19,7 +19,7 @@ public class Utils {
 
 		PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
 
-		RestAssured.baseURI = "https://rahulshettyacademy.com";
+		RestAssured.baseURI = ConfigReader.init_prop().getProperty("baseurl");
 
 		req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").addQueryParam("key", "qaclick123")
 				.addFilter(RequestLoggingFilter.logRequestTo(log))
