@@ -3,6 +3,7 @@ package StepDefinations;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,9 +31,7 @@ public class sample extends Utils {
 	TestDataBuild testdata = new TestDataBuild();
 
 	@Given("add place payload")
-	public void add_place_payload() {
-
-		res = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+	public void add_place_payload() throws FileNotFoundException {
 
 		response = given().spec(requestspecification()).body(testdata.data_addplace_payload());
 
@@ -40,6 +39,7 @@ public class sample extends Utils {
 
 	@When("user call {string} with post http request")
 	public void user_call_with_post_http_request(String string) {
+		res = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		getresponse = response.when().post("/maps/api/place/add/json").then().spec(res).extract().response();
 
 	}
