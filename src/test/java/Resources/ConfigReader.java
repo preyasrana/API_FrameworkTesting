@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import io.restassured.path.json.JsonPath;
+
 public class ConfigReader {
 
 	private static Properties prop;
@@ -36,5 +38,7 @@ public class ConfigReader {
 		if(reportConfigPath!= null) return reportConfigPath;
 		else throw new RuntimeException("Report Config Path not specified in the Configuration.properties file for the Key:reportConfigPath");		
 	}
+	
+	
 
 }

@@ -30,6 +30,8 @@ public class sample extends Utils {
 	RequestSpecification response;
 	Response getresponse;
 	TestDataBuild testdata = new TestDataBuild();
+	String placeid;
+	JsonPath json;
 
 	@Given("add place payload with {string} {string} {string}")
 	public void add_place_payload(String name, String address, String language) throws FileNotFoundException {
@@ -62,11 +64,25 @@ public class sample extends Utils {
 	}
 
 	@Then("{string} in response body is {string}")
-	public void status_in_reponse_body_is_ok(String keyvalue, String Expectedvalue) {
-
-		String res = getresponse.asString();
-		JsonPath json = new JsonPath(res);
-		assertEquals(json.get(keyvalue).toString(), Expectedvalue);
+	public void status_in_reponse_body_is_ok(String keyvalue, String Expectedvalue) {	
+		
+		assertEquals(getjsonpath(getresponse, keyvalue), Expectedvalue);
+	}
+	
+	@Then("Verify placeid created map to {string} using {string}")
+	public void verify_placeid_created_map_to_using(String expectedname, String resource) throws FileNotFoundException {
+	    
+		placeid = getjsonpath(getresponse, "place_id");
+		
+		System.out.println("placeid is -->"+placeid);
+		response = given().spec(requestspecification()).queryParam("place_id", placeid);
+		user_call_with_post_http_request(resource, "get");
+		
+		String actualname = getjsonpath(getresponse, "name");
+		System.out.println("actualname -->"+actualname);
+		assertEquals(actualname, expectedname);
+		
+		
 	}
 
 }

@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"43ab662f-7409-4689-8f46-172ad417b28a","feature":"Verify Place APIs call","scenario":"Verify Add Place API Successfully","start":1654777499703,"group":1,"content":"","tags":"@smoketest,","end":1654777502791,"className":"passed"},{"id":"62eb8101-392d-4955-ab13-5fcac304a5ea","feature":"Verify Place APIs call","scenario":"Verify Add Place API Successfully","start":1654777502821,"group":1,"content":"","tags":"@smoketest,","end":1654777503005,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"dbe3a57e-39ba-483f-b1ff-444c1c5972f6","feature":"Verify Place APIs call","scenario":"Verify Add Place API Successfully","start":1654779689849,"group":1,"content":"","tags":"@smoketest,","end":1654779693271,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
