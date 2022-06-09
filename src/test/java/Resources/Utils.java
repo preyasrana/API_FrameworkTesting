@@ -13,19 +13,21 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utils {
 
-	RequestSpecification req;
+	public static RequestSpecification req;
 
 	public RequestSpecification requestspecification() throws FileNotFoundException {
 
-		PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
+		if (req == null) {
+			PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
 
-		RestAssured.baseURI = ConfigReader.init_prop().getProperty("baseurl");
+			RestAssured.baseURI = ConfigReader.init_prop().getProperty("baseurl");
 
-		req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").addQueryParam("key", "qaclick123")
-				.addFilter(RequestLoggingFilter.logRequestTo(log))
-				.addFilter(ResponseLoggingFilter.logResponseTo(log))
-				.setContentType(ContentType.JSON).build();
+			req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
+					.addQueryParam("key", "qaclick123").addFilter(RequestLoggingFilter.logRequestTo(log))
+					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
 
+			return req;
+		}
 		return req;
 	}
 

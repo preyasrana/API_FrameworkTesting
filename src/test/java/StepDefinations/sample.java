@@ -9,6 +9,7 @@ import java.util.List;
 
 import POJO.Addplace;
 import POJO.location;
+import Resources.APIsList;
 import Resources.TestDataBuild;
 import Resources.Utils;
 import io.cucumber.java.en.Given;
@@ -30,19 +31,26 @@ public class sample extends Utils {
 	Response getresponse;
 	TestDataBuild testdata = new TestDataBuild();
 
-
 	@Given("add place payload with {string} {string} {string}")
 	public void add_place_payload(String name, String address, String language) throws FileNotFoundException {
 
-		response = given().spec(requestspecification())
-				.body(testdata.data_addplace_payload(name,address,language));
+		response = given().spec(requestspecification()).body(testdata.data_addplace_payload(name, address, language));
 
 	}
 
-	@When("user call {string} with post http request")
-	public void user_call_with_post_http_request(String string) {
+	@When("user call {string} with {string} http request")
+	public void user_call_with_post_http_request(String resource, String method) {
+
+		APIsList apiresource = APIsList.valueOf(resource);
+		System.out.println(apiresource.getResource());
+
 		res = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-		getresponse = response.when().post("/maps/api/place/add/json").then().spec(res).extract().response();
+		if (method.equalsIgnoreCase("post")) 
+			getresponse = response.when().post(apiresource.getResource()).then().spec(res).extract().response();
+		if (method.equalsIgnoreCase("get"))
+			getresponse = response.when().get(apiresource.getResource()).then().spec(res).extract().response();
+			
+		
 
 	}
 
