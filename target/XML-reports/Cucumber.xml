@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="4.3">
-<testcase classname="Verify Place APIs call" name="Verify Add Place API Successfully" time="3.713">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="3.984">
+<testcase classname="Verify Place APIs call" name="Verify Add Place API Successfully" time="3.373">
 <system-out><![CDATA[Given add place payload with "test user" "30, new layout, side 09" "English US".passed
 When user call "addplaceapi" with "post" http request.......................passed
 Then user verify status code is 200.........................................passed
@@ -9,7 +9,7 @@ And "scope" in response body is "APP".......................................pass
 And Verify placeid created map to "test user" using "getplaceapi"...........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verify Place APIs call" name="Verify if delete place functionality its working" time="0.293">
+<testcase classname="Verify Place APIs call" name="Verify if delete place functionality its working" time="0.354">
 <system-out><![CDATA[Given deleteplacepayload....................................................passed
 When user call "deleteplaceapi" with "post" http request....................passed
 Then user verify status code is 200.........................................passed
