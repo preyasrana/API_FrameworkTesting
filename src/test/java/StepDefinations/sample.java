@@ -30,7 +30,7 @@ public class sample extends Utils {
 	RequestSpecification response;
 	Response getresponse;
 	TestDataBuild testdata = new TestDataBuild();
-	String placeid;
+	static String placeid;
 	JsonPath json;
 
 	@Given("add place payload with {string} {string} {string}")
@@ -83,6 +83,13 @@ public class sample extends Utils {
 		assertEquals(actualname, expectedname);
 		
 		
+	}
+	
+	@Given("deleteplacepayload")
+	public void deleteplacepayload() throws FileNotFoundException {
+	   
+		response = given().spec(requestspecification())
+		.body(testdata.deleteplacepayload(placeid));
 	}
 
 }

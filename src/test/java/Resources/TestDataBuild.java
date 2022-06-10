@@ -7,10 +7,10 @@ import POJO.Addplace;
 import POJO.location;
 
 public class TestDataBuild {
-	
+
 	Addplace addplc = new Addplace();
 	location loc = new location();
-	
+
 	public Addplace data_addplace_payload(String name, String address, String language) {
 
 		addplc.setAccuracy(100);
@@ -30,7 +30,13 @@ public class TestDataBuild {
 
 		addplc.setLocation(loc);
 		return addplc;
-		
+
+	}
+
+	public String deleteplacepayload(String placeid) {
+	  return	"{\n"
+	    		+ "    \"place_id\":\""+placeid+"\"\n"
+	    		+ "}";
 	}
 
 }
