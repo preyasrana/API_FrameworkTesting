@@ -1,6 +1,6 @@
 Feature: Verify Place APIs call
 
-@smoketest
+  @smoketest
   Scenario Outline: Verify Add Place API Successfully
     Given add place payload with "<name>" "<address>" "<language>"
     When user call "addplaceapi" with "post" http request
@@ -13,7 +13,7 @@ Feature: Verify Place APIs call
       | name       | address                 | language   |
       | test user  | 30, new layout, side 09 | English US |
    
-   @smoketest   
+  @smoketest   
   Scenario: Verify if delete place functionality its working
       Given deleteplacepayload
       When user call "deleteplaceapi" with "post" http request
