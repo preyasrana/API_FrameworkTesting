@@ -4,6 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.gherkin.model.Given;
+import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -27,11 +32,41 @@ public class Utils {
 			req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
 					.addQueryParam("key", "qaclick123").addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
+			
+			
 
 			return req;
 		}
 		return req;
 	}
+	
+	
+	public RequestSpecification requestspecification_new() throws FileNotFoundException {
+
+		if (req == null) {
+			PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
+			
+			
+			RestAssured.baseURI = ConfigReader.init_prop().getProperty("bookstore_baseurl");
+			
+			req = new RequestSpecBuilder().setBaseUri(ConfigReader.init_prop().getProperty("bookstore_baseurl"))
+					.setAuth(basic(ConfigReader.init_prop().getProperty("Username"), 
+							ConfigReader.init_prop().getProperty("Password")))
+					.addFilter(RequestLoggingFilter.logRequestTo(log))
+					.addFilter(ResponseLoggingFilter.logResponseTo(log))
+					
+					
+					.build();
+			
+			return req;
+		}
+		return req;
+		
+	}
+	
+
+	
+	
 
 	public String getjsonpath(Response response, String key) {
 

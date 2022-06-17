@@ -36,10 +36,14 @@ public class sample extends Utils {
 	@Given("add place payload with {string} {string} {string}")
 	public void add_place_payload(String name, String address, String language) throws FileNotFoundException {
 
-		response = given().spec(requestspecification()).body(testdata.data_addplace_payload(name, address, language));
+		
+		response = given()
+				.spec(requestspecification()).body(testdata.data_addplace_payload(name, address, language));
 
 	}
-
+	
+	
+	
 	@When("user call {string} with {string} http request")
 	public void user_call_with_post_http_request(String resource, String method) {
 
@@ -47,8 +51,10 @@ public class sample extends Utils {
 		System.out.println(apiresource.getResource());
 
 		res = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		System.out.println(res);
 		if (method.equalsIgnoreCase("post")) 
 			getresponse = response.when().post(apiresource.getResource()).then().spec(res).extract().response();
+		System.out.println(getresponse);
 		if (method.equalsIgnoreCase("get"))
 			getresponse = response.when().get(apiresource.getResource()).then().spec(res).extract().response();
 			
@@ -59,6 +65,7 @@ public class sample extends Utils {
 	@Then("user verify status code is {int}")
 	public void user_verify_status_code_is(Integer int1) {
 
+		System.out.println(getresponse.getStatusCode());
 		assertEquals(getresponse.getStatusCode(), 200);
 
 	}
@@ -91,5 +98,27 @@ public class sample extends Utils {
 		response = given().spec(requestspecification())
 		.body(testdata.deleteplacepayload(placeid));
 	}
+	
+	@When("user are call {string} with {string} http request")
+	public void getBooksapi(String resource, String method) throws FileNotFoundException {
+		
+		APIsList apiresource = APIsList.valueOf(resource);
+		System.out.println("apiresource"+apiresource.getResource());
+	
+		res = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		System.out.println("Response is "+res);
+		
+		if (method.equalsIgnoreCase("get"))
+			
+			getresponse = given().spec(requestspecification_new()).get(apiresource.getResource()).then().spec(res).extract().response();
+
+		    System.out.println(getresponse);
+		    //get isbn no
+		    placeid = getjsonpath(getresponse, "books[7].isbn");
+		    System.out.println(placeid);
+		
+	}
+	
+	
 
 }

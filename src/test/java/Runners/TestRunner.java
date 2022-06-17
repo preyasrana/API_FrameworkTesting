@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 		"junit:target/XML-reports/Cucumber.xml", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		"timeline:test-output-thread/" }, tags = "@smoketest" )
 
-//tags = "@Deleteplace"
+
 @Test
 public class TestRunner extends AbstractTestNGCucumberTests {
 	
