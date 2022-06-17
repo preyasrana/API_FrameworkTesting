@@ -21,10 +21,10 @@ Feature: Verify Place APIs call
       And "status" in response body is "OK"
       
   @smoketest
-  Scenario: Verify if delete place functionality its working
+  Scenario: Verify if Getbookstore api functionality its working
        When user are call "getbooksapi" with "get" http request
        Then user verify status code is 200
    
-
+  
       
       

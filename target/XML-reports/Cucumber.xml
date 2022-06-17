@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.515">
-    <testcase classname="Verify Place APIs call" name="Verify if delete place functionality its working" time="3.341">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.333">
+    <testcase classname="Verify Place APIs call" name="Verify if Getbookstore api functionality its working" time="3.149">
         <system-out>
             <![CDATA[When user are call "getbooksapi" with "get" http request....................passed
 Then user verify status code is 200.........................................passed
