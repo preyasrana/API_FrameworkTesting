@@ -3,11 +3,6 @@ package Resources;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.gherkin.model.Given;
 import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -33,15 +28,13 @@ public class Utils {
 					.addQueryParam("key", "qaclick123").addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
 			
-			
-
 			return req;
 		}
 		return req;
 	}
 	
 	
-	public RequestSpecification requestspecification_new() throws FileNotFoundException {
+	public RequestSpecification basicauth_requestspecification() throws FileNotFoundException {
 
 		if (req == null) {
 			PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
@@ -54,8 +47,7 @@ public class Utils {
 							ConfigReader.init_prop().getProperty("Password")))
 					.addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log))
-					
-					
+					.setContentType(ContentType.JSON)
 					.build();
 			
 			return req;

@@ -6,12 +6,13 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
+				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx/1.17.10 (Ubuntu)
-Date: Fri, 17 Jun 2022 13:01:45 GMT
+Date: Mon, 20 Jun 2022 10:43:21 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 4514
 Connection: keep-alive
@@ -109,4 +110,37 @@ ETag: W/"11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY"
             "website": "https://leanpub.com/understandinges6/read"
         }
     ]
+}
+Request method:	POST
+Request URI:	https://bookstore.demoqa.com/BookStore/v1/Books
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": "null",
+    "collectionOfIsbns": [
+        {
+            "isbn": "9781593277574"
+        }
+    ]
+}
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.17.10 (Ubuntu)
+Date: Mon, 20 Jun 2022 10:43:23 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 48
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"30-V67npMN18Zy3bnk1xW2xtLGgx8c"
+
+{
+    "code": "1200",
+    "message": "User not authorized!"
 }

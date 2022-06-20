@@ -12,7 +12,9 @@ public enum APIsList {
 	
 	
 	//Book Store APIs
-	getbooksapi("/BookStore/v1/Books");
+	getbooksapi("/BookStore/v1/Books"),
+	postcreateuserapi("/Account/v1/User"),
+	post_Assign_book_user("/BookStore/v1/Books");
 	
 	
 
