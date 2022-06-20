@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="3.942">
-    <testcase classname="Verify Place APIs call" name="Verify Create user API Successfully" time="0.085">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given add user with username & password.....................................undefined
-When user are call "postcreateuserapi" with "post" http request.............skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="5.26">
+    <testcase classname="Verify Place APIs call" name="Verify Create user API Successfully" time="3.537">
+        <system-out>
+            <![CDATA[Given add user with "Testing_new_user_10010" "Test10@Preyas"................passed
+When user are call "postcreateuserapi" with "post" http request.............passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Verify Place APIs call" name="Verify if Getbookstore api functionality its working" time="2.943">
+    <testcase classname="Verify Place APIs call" name="Verify if Getbookstore api functionality its working" time="0.694">
         <system-out>
             <![CDATA[When user are call "getbooksapi" with "get" http request....................passed
 Then user verify status code is 200.........................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify Place APIs call" name="Verify AssignBook to user API Successfully" time="0.663">
+    <testcase classname="Verify Place APIs call" name="Verify AssignBook to user API Successfully" time="0.768">
         <failure message="" type="java.lang.NullPointerException">
             <![CDATA[Given assignbooktoUSer......................................................passed
 When user shouldbe call "post_Assign_book_user" with "post" http request....failed
@@ -22,7 +22,7 @@ When user shouldbe call "post_Assign_book_user" with "post" http request....fail
 StackTrace:
 java.lang.NullPointerException
 	at Resources.Utils.getjsonpath(Utils.java:67)
-	at StepDefinations.sample.Booksapi(sample.java:163)
+	at StepDefinations.sample.Booksapi(sample.java:171)
 	at ✽.user shouldbe call "post_Assign_book_user" with "post" http request(file:///home/preyas.r@ah.zymrinc.com/Desktop/preyas/Eclipse-NEw-Workspace/API_FrameworkTesting/src/test/java/Feature/sample.feature:41)
 ]]>
         </failure>

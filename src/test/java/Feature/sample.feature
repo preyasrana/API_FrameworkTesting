@@ -22,17 +22,22 @@ Feature: Verify Place APIs call
 
   @smoketest
   Scenario Outline: Verify Create user API Successfully
-    Given add user with "<USRNAME>" "<PASSWORD>"
+    #Given add user with "<USRNAME>" "<PASSWORD>"
+    Given add user with username and password
     When user are call "postcreateuserapi" with "post" http request
 
     Examples: 
       | USRNAME                | PASSWORD      |
-      | Testing_new_user_10007 | Test10@Preyas |
+      | Testing_new_user_10010 | Test10@Preyas |
 
   @smoketest
   Scenario: Verify if Getbookstore api functionality its working
     When user are call "getbooksapi" with "get" http request
     Then user verify status code is 200
+    
+  @smoketest
+  Scenario: Verify Create token functionality its working 
+     
 
   @smoketest
   Scenario Outline: Verify AssignBook to user API Successfully

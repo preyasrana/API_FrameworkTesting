@@ -55,5 +55,13 @@ public class TestDataBuild {
 		return "{\n" + "	    \"userId\": \"" + userID + "\",\n" + "	    \"collectionOfIsbns\": [\n" + "	        {\n"
 				+ "	            \"isbn\": \"" + isbnid + "\"\n" + "	        }\n" + "	    ]\n" + "	}";
 	}
+	
+	public String create_user() {
+		
+		return "{\n"
+				+ "    \"userName\": \""+ConfigReader.init_prop().getProperty("Username")+"\",\n"
+				+ "    \"password\": \""+ConfigReader.init_prop().getProperty("Password")+"\"\n"
+				+ "}";
+	}
 
 }

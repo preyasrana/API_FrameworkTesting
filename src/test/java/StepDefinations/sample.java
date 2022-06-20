@@ -32,6 +32,7 @@ public class sample extends Utils {
 	RequestSpecification req;
 	Response getresponse;
 	TestDataBuild testdata = new TestDataBuild();
+
 	static String placeid;
 	static String isbnid;
 	static String userID;
@@ -50,7 +51,14 @@ public class sample extends Utils {
 		req = given().spec(basicauth_requestspecification())
 				.body(testdata.Create_user_payload(USRNAME, PASSWORD));
 	}
-
+	
+	
+	@Given("add user with username and password")
+	public void add_user_payload() throws FileNotFoundException {
+		
+    	req = given().spec(basicauth_requestspecification()).body(testdata.create_user());
+		
+	}
 
 
 	@When("user call {string} with {string} http request")
