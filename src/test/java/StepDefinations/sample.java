@@ -29,6 +29,7 @@ public class sample extends Utils {
 	static String userID;
 	static String token;
 	static String Assignbook_isbnid;
+	static String spotify_uri;
 	JsonPath json;
 
 	@Given("add place payload with {string} {string} {string}")
@@ -64,6 +65,39 @@ public class sample extends Utils {
 		System.out.println(getresponse);
 		if (method.equalsIgnoreCase("get"))
 			getresponse = req.when().get(apiresource.getResource()).then().spec(res).extract().response();
+
+	}
+
+	@When("user are calling {string} with {string} http request")
+	public void user_are_calling_with_http_request(String resource, String method) throws FileNotFoundException {
+
+		APIsList apiresource = APIsList.valueOf(resource);
+		System.out.println(apiresource.getResource());
+
+		if (method.equalsIgnoreCase("get")) {
+
+			res = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = given().spec(auth2_requestspecification()).get(apiresource.getResource()).then().spec(res)
+					.extract().response();
+
+			System.out.println(getresponse);
+
+			spotify_uri = getjsonpath(getresponse, "albums.items[0].uri");
+			System.out.println("spotify_uri is -->" + spotify_uri);
+			
+			
+
+		} else if (method.equalsIgnoreCase("post")) {
+
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().post(apiresource.getResource()).then().spec(res).extract().response();
+			System.out.println(getresponse);
+
+		}
 
 	}
 

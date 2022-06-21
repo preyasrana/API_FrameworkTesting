@@ -15,7 +15,15 @@ public enum APIsList {
 	getbooksapi("/BookStore/v1/Books"),
 	postcreateuserapi("/Account/v1/User"),
 	post_Assign_book_user("/BookStore/v1/Books"),
-	generate_token("/Account/v1/GenerateToken");
+	generate_token("/Account/v1/GenerateToken"),
+	
+	
+	//SpotifyAPIs
+	get_newrelease("/browse/new-releases");
+	
+	
+	
+	
 	
 	
 
