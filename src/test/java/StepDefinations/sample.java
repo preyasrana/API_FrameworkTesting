@@ -36,6 +36,7 @@ public class sample extends Utils {
 	static String placeid;
 	static String isbnid;
 	static String userID;
+	static String token;
 	JsonPath json;
 
 	@Given("add place payload with {string} {string} {string}")
@@ -146,10 +147,32 @@ public class sample extends Utils {
 
 	}
 	
+	
+	@When("userare call {string} with {string} http request")
+	public void createtoken(String resource, String method) throws FileNotFoundException {
+
+		APIsList apiresource = APIsList.valueOf(resource);
+		System.out.println("apiresource" + apiresource.getResource());
+		
+		if (method.equalsIgnoreCase("post")) {
+			
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+			
+			getresponse = req.when().post(apiresource.getResource()).then().spec(res).extract().response();
+			System.out.println(getresponse);
+			
+			
+			token = getjsonpath(getresponse, "token");
+		    System.out.println("token is -->" + token);
+		}
+	
+	}
+	
 	@Given("assignbooktoUSer")
 	public void assignbooktoUSer() throws FileNotFoundException {
 
-		req = given().spec(basicauth_requestspecification()).body(testdata.post_assignbook_touser(userID,isbnid));
+		req = given().spec(basicauth_requestspecification()).headers("Authorization","Bearer " + token).body(testdata.post_assignbook_touser(userID,isbnid));
 	}
 	
 	@When("user shouldbe call {string} with {string} http request")
@@ -168,7 +191,7 @@ public class sample extends Utils {
 			getresponse = req.when().post(apiresource.getResource()).then().spec(res).extract().response();
 			System.out.println(getresponse);
 			
-			isbnid = getjsonpath(getresponse, "isbn");
+			isbnid = getjsonpath(getresponse, "books[0].isbn");
 		    System.out.println("isbnid is -->" +isbnid);
 		}
 		

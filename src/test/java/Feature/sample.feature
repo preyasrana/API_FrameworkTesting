@@ -37,7 +37,8 @@ Feature: Verify Place APIs call
     
   @smoketest
   Scenario: Verify Create token functionality its working 
-     
+     Given add user with username and password
+     When userare call "generate_token" with "post" http request
 
   @smoketest
   Scenario Outline: Verify AssignBook to user API Successfully

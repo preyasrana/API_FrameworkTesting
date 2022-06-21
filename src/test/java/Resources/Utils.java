@@ -16,6 +16,8 @@ import io.restassured.specification.RequestSpecification;
 public class Utils {
 
 	public static RequestSpecification req;
+	
+	
 
 	public RequestSpecification requestspecification() throws FileNotFoundException {
 
@@ -37,7 +39,7 @@ public class Utils {
 	public RequestSpecification basicauth_requestspecification() throws FileNotFoundException {
 
 		if (req == null) {
-			PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
+			PrintStream log = new PrintStream(new FileOutputStream("basicauthlogging.txt"));
 			
 			
 			RestAssured.baseURI = ConfigReader.init_prop().getProperty("bookstore_baseurl");
@@ -56,7 +58,8 @@ public class Utils {
 		
 	}
 	
-
+	
+	
 	
 	
 
