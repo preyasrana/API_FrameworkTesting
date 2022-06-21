@@ -1,113 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="3.226">
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="2.965">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="4.843">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="3.107">
         <system-out>
             <![CDATA[When user are calling "get_newrelease" with "get" http request..............passed
 Then user verify status code is 200.........................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Create_playlist api functionality its working" time="0.043">
-        <failure message="Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: user_id=316u2kbs3igfzhgmddihg5l72yr4." type="java.lang.IllegalArgumentException">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Create_playlist api functionality its working" time="0.509">
+        <system-out>
             <![CDATA[Given add playlist..........................................................passed
-When user are calling "post_createplaylist" with "post" http request........failed
-
-StackTrace:
-java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: user_id=316u2kbs3igfzhgmddihg5l72yr4.
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1250)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1137)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
-	at io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1672)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1678)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:177)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at StepDefinations.sample.user_are_calling_with_http_request(sample.java:105)
-	at ✽.user are calling "post_createplaylist" with "post" http request(file:///home/preyas.r@ah.zymrinc.com/Desktop/preyas/Eclipse-NEw-Workspace/API_FrameworkTesting/src/test/java/Feature/SpotifyAuth2.0.feature:11)
+When user are calling "post_createplaylist" with "post" http request........passed
+Then get playlistid.........................................................passed
 ]]>
-        </failure>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Additemto_playlist api functionality its working" time="0.429">
+        <system-out>
+            <![CDATA[Given add itemtoplaylist....................................................passed
+When user are calling "post_additemstoplaylist" with "post" http request....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Change_playlistdetail api functionality its working" time="0.455">
+        <system-out>
+            <![CDATA[Given update itemtoplaylist.................................................passed
+When user are calling "put_changeplaylistdetail" with "put" http request....passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>

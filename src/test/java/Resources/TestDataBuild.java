@@ -72,5 +72,14 @@ public class TestDataBuild {
 				+ "  \"public\": false\n"
 				+ "}";
 	}
+	
+	public String update_playlist() {
+		
+		return "{\n"
+				+ "  \"name\": \"Updated Preyas Playlist\",\n"
+				+ "  \"description\": \"Updated Preyas playlist description\",\n"
+				+ "  \"public\": false\n"
+				+ "}";
+	}
 
 }

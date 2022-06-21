@@ -30,6 +30,8 @@ public class sample extends Utils {
 	static String token;
 	static String Assignbook_isbnid;
 	static String spotify_uri;
+	static String playlistid;
+
 	JsonPath json;
 
 	@Given("add place payload with {string} {string} {string}")
@@ -51,13 +53,27 @@ public class sample extends Utils {
 		req = given().spec(basicauth_requestspecification()).body(testdata.create_user());
 
 	}
-	
+
 	@Given("add playlist")
 	public void add_playlist() throws FileNotFoundException {
-		
-		req = given().spec(auth2_requestspecification()).pathParam("user_id",ConfigReader.init_prop().getProperty("UserId"))
-				.body(testdata.create_playlist());
-		
+
+		req = given().spec(auth2_requestspecification()).body(testdata.create_playlist());
+
+	}
+	
+	@Given("update itemtoplaylist")
+	public void update_itemtoplaylist() throws FileNotFoundException {
+
+		req = given().spec(auth2_requestspecification()).body(testdata.update_playlist());
+
+	}
+
+	@Given("add itemtoplaylist")
+	public void add_itemtoplaylist() throws FileNotFoundException {
+
+		req = given().spec(auth2_requestspecification()).queryParams("uris",ConfigReader.init_prop().getProperty("trackid"));
+				
+
 	}
 
 	@When("user call {string} with {string} http request")
@@ -80,7 +96,18 @@ public class sample extends Utils {
 	public void user_are_calling_with_http_request(String resource, String method) throws FileNotFoundException {
 
 		APIsList apiresource = APIsList.valueOf(resource);
-		System.out.println(apiresource.getResource());
+		String strAPIResource = apiresource.getResource();
+		System.out.println(strAPIResource);
+
+		if (strAPIResource.contains(":user_id")) {
+			strAPIResource = strAPIResource.replace(":user_id", ConfigReader.init_prop().getProperty("UserId"));
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		} else if (strAPIResource.contains(":playlistid")) {
+			strAPIResource = strAPIResource.replace(":playlistid", playlistid);
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		}
+		
+		
 
 		if (method.equalsIgnoreCase("get")) {
 
@@ -94,19 +121,32 @@ public class sample extends Utils {
 
 			spotify_uri = getjsonpath(getresponse, "albums.items[0].uri");
 			System.out.println("spotify_uri is -->" + spotify_uri);
-			
-			
 
 		} else if (method.equalsIgnoreCase("post")) {
 
 			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
 			System.out.println("Response is " + res);
 
-			getresponse = req.when().post(apiresource.getResource()).then().spec(res).extract().response();
+			getresponse = req.when().post(strAPIResource).then().spec(res).extract().response();
 			System.out.println(getresponse);
 
 		}
+		else if(method.equalsIgnoreCase("put")) {
+			
+			res = new ResponseSpecBuilder().expectStatusCode(200).build();
+			System.out.println("Response is " + res);
 
+			getresponse = req.when().put(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+		}
+
+	}
+
+	@Then("get playlistid")
+	public void get_playlistid() {
+
+		playlistid = getjsonpath(getresponse, "id");
+		System.out.println("playlistid is -->" + playlistid);
 	}
 
 	@Then("user verify status code is {int}")

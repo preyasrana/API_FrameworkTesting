@@ -20,9 +20,9 @@ public enum APIsList {
 	
 	//SpotifyAPIs
 	get_newrelease("/browse/new-releases"),
-	post_createplaylist("/users/:user_id/playlists");
-	
-	
+	post_createplaylist("/users/:user_id/playlists"),
+	post_additemstoplaylist("/playlists/:playlistid/tracks"),
+	put_changeplaylistdetail("/playlists/:playlistid");
 	
 	
 

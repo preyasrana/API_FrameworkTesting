@@ -9,3 +9,14 @@ Feature: Verify SpotifyAuth2.0 Functionality
   Scenario: Verify if Create_playlist api functionality its working
     Given add playlist
     When user are calling "post_createplaylist" with "post" http request
+    Then get playlistid
+    
+  @smoketest
+  Scenario: Verify if Additemto_playlist api functionality its working
+      Given add itemtoplaylist
+      When user are calling "post_additemstoplaylist" with "post" http request
+      
+  @smoketest
+  Scenario: Verify if Change_playlistdetail api functionality its working
+     Given update itemtoplaylist
+     When user are calling "put_changeplaylistdetail" with "put" http request    
