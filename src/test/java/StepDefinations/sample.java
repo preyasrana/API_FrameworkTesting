@@ -2,9 +2,9 @@ package StepDefinations;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
-
 import java.io.FileNotFoundException;
 import Resources.APIsList;
+import Resources.ConfigReader;
 import Resources.TestDataBuild;
 import Resources.Utils;
 import io.cucumber.java.en.Given;
@@ -50,6 +50,14 @@ public class sample extends Utils {
 
 		req = given().spec(basicauth_requestspecification()).body(testdata.create_user());
 
+	}
+	
+	@Given("add playlist")
+	public void add_playlist() throws FileNotFoundException {
+		
+		req = given().spec(auth2_requestspecification()).pathParam("user_id",ConfigReader.init_prop().getProperty("UserId"))
+				.body(testdata.create_playlist());
+		
 	}
 
 	@When("user call {string} with {string} http request")

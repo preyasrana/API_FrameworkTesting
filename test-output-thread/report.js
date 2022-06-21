@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"100e4319-a6e0-4f42-a363-0c8d42bed8c9","feature":"Verify SpotifyAuth2.0 Functionality","scenario":"Verify if Get_newreleases api functionality its working","start":1655803879661,"group":1,"content":"","tags":"@smoketest,","end":1655803882624,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"a429ad52-3d19-423f-9689-2ba5d4161e59","feature":"Verify SpotifyAuth2.0 Functionality","scenario":"Verify if Get_newreleases api functionality its working","start":1655809078967,"group":1,"content":"","tags":"@smoketest,","end":1655809081933,"className":"passed"},{"id":"9cf397b0-1b5e-46cf-adf8-932cbda38b45","feature":"Verify SpotifyAuth2.0 Functionality","scenario":"Verify if Create_playlist api functionality its working","start":1655809081978,"group":1,"content":"","tags":"@smoketest,","end":1655809082022,"className":"failed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

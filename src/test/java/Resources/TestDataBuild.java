@@ -63,5 +63,14 @@ public class TestDataBuild {
 				+ "    \"password\": \""+ConfigReader.init_prop().getProperty("Password")+"\"\n"
 				+ "}";
 	}
+	
+	public String create_playlist() {
+		
+		return "{\n"
+				+ "  \"name\": \"Preyas Playlist\",\n"
+				+ "  \"description\": \"Preyas playlist description\",\n"
+				+ "  \"public\": false\n"
+				+ "}";
+	}
 
 }

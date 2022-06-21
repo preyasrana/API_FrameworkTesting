@@ -4,6 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+
+
 import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
 import io.restassured.authentication.AuthenticationScheme;
@@ -20,7 +22,7 @@ import io.restassured.specification.RequestSpecification;
 public class Utils {
 
 	public static RequestSpecification req;
-	static String oauthtoken = "BQDU6V16uvCbj2xe1vA92zeFK6NUFWJUhs_G95XDXXC0VqDIgogO1KM1fJ4o6uRu9K8ks9RxPA58_jCY7BS7vmImzXqPtd0QWxO2O_CDvD0B3MB-UJZItP9log7poWAw8KBJ6rh8m94sxRSikjkgMnKUeJBUBy02mFlufihkOhvbG-RAkDzaaPAX5RgqYvC-vrCvNPiJGqDIJRony5Q__YQurvh5GUmDao-XoNRJ-YJkbkbCT73m8JqVQk01pXC6FJs1NwwHAg823wU";
+	static String oauthtoken = "BQAfeOpw8ETiDPf-jIS0c6TzceaZetUMr7uAHUdRbxyJxIdhp0NK0evcoSdeFN0Xn09rsQ2psF6D0LZ-Ea8fhvjMKpZoHux5rc5w71wnQh6c9t1VMdjwxSjeMoEzF2tBjKGqUqyF20k8IDCRWUIjs4jAbkzAiEnI2Yr4m1IDxC7A9dl4RRUo5l9x7dM9ZrCjFcsQlSbIwQtX9J3rcyWsSS2Pmv2u8G4NLTNzwMPTNS1SgkCOJjdW6P2aoipgVh4YATx6ROQCaMpbuEI";
 	static String accesstoken;
 	public JsonPath json;
 
@@ -86,7 +88,29 @@ public class Utils {
 		return scheme;
 	}
 
-	
+	public String auth2token() {
+
+		String token = given().urlEncodingEnabled(false)
+
+				.queryParam("client_id", "4e95ed2a5096419d92787be74f2e0e8c")
+				.queryParam("client_secret", "b72989f7c4ca4a49982fe66e60a0edb1")
+				.queryParam("callback_url", "https://oauth.pstmn.io/v1/browser-callback")
+				.queryParam("grant_type", "authorization_code")
+				.queryParam("Auth_URL", "https://accounts.spotify.com/authorize")
+				.queryParam("Scope", "playlist-modify-public playlist-read-private playlist-modify-private")
+
+				.when().log().all().post("https://accounts.spotify.com/api/token").asString();
+
+		System.out.println(token);
+
+		json = Utils.rawToJson(token);
+
+		accesstoken = json.getString("access_token");
+		System.out.println("access token is ::" + accesstoken);
+
+		return accesstoken;
+
+	}
 
 	public String getjsonpath(Response response, String key) {
 
