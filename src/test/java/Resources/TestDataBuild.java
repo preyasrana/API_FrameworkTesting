@@ -81,5 +81,20 @@ public class TestDataBuild {
 				+ "  \"public\": false\n"
 				+ "}";
 	}
+	
+	public String delete_playlist_item() {
+		
+		return "{\n"
+				+ "    \"tracks\": [\n"
+				+ "        {\n"
+				+ "            \"uri\": \""+ConfigReader.init_prop().getProperty("trackid")+"\"\n"
+				+ "        }\n"
+				+ "\n"
+				+ "    ]\n"
+				+ "}";
+	}
+	
+	
+	
 
 }

@@ -19,4 +19,11 @@ Feature: Verify SpotifyAuth2.0 Functionality
   @smoketest
   Scenario: Verify if Change_playlistdetail api functionality its working
      Given update itemtoplaylist
-     When user are calling "put_changeplaylistdetail" with "put" http request    
+     When user are calling "put_changeplaylistdetail" with "put" http request
+     
+  @smoketest
+  Scenario: Verify if remove_playlistitem api functionality its working
+     Given delete itemtoplaylist
+     When user are calling "del_removeitemplaylist" with "delete" http request   
+     Then user verify status code is 200
+         

@@ -67,6 +67,14 @@ public class sample extends Utils {
 		req = given().spec(auth2_requestspecification()).body(testdata.update_playlist());
 
 	}
+	
+	
+	@Given("delete itemtoplaylist")
+	public void delete_itemtoplaylist() throws FileNotFoundException {
+
+		req = given().spec(auth2_requestspecification()).body(testdata.delete_playlist_item());
+
+	}
 
 	@Given("add itemtoplaylist")
 	public void add_itemtoplaylist() throws FileNotFoundException {
@@ -139,6 +147,16 @@ public class sample extends Utils {
 			getresponse = req.when().put(strAPIResource).then().spec(res).extract().response();
 			System.out.println(getresponse);
 		}
+		else if(method.equalsIgnoreCase("delete")) {
+			
+			res = new ResponseSpecBuilder().expectStatusCode(200).build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().delete(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+			
+		}
+		
 
 	}
 

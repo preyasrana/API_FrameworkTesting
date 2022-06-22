@@ -22,8 +22,8 @@ public enum APIsList {
 	get_newrelease("/browse/new-releases"),
 	post_createplaylist("/users/:user_id/playlists"),
 	post_additemstoplaylist("/playlists/:playlistid/tracks"),
-	put_changeplaylistdetail("/playlists/:playlistid");
-	
+	put_changeplaylistdetail("/playlists/:playlistid"),
+	del_removeitemplaylist("/playlists/:playlistid/tracks");
 	
 
 	private String resource;
