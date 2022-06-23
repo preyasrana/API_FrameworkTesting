@@ -95,6 +95,18 @@ public class TestDataBuild {
 	}
 	
 	
+	public String invalid_delete_playlist_item() {
+		
+		return "{\n"
+				+ "    \"tracks\": [\n"
+				+ "        {\n"
+				+ "            \"uri\": \""+ConfigReader.init_prop().getProperty("invalidtrackid")+"\"\n"
+				+ "        }\n"
+				+ "\n"
+				+ "    ]\n"
+				+ "}";
+	}
+	
 	
 
 }

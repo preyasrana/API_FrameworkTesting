@@ -2,6 +2,8 @@ package StepDefinations;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.io.FileNotFoundException;
 import Resources.APIsList;
 import Resources.ConfigReader;
@@ -31,6 +33,7 @@ public class sample extends Utils {
 	static String Assignbook_isbnid;
 	static String spotify_uri;
 	static String playlistid;
+	static String invalidjson_response;
 
 	JsonPath json;
 
@@ -73,6 +76,13 @@ public class sample extends Utils {
 	public void delete_itemtoplaylist() throws FileNotFoundException {
 
 		req = given().spec(auth2_requestspecification()).body(testdata.delete_playlist_item());
+
+	}
+	
+	@Given("invaliddelete itemtoplaylist")
+	public void invaliddelete_itemtoplaylist() throws FileNotFoundException {
+
+		req = given().spec(auth2_requestspecification()).body(testdata.invalid_delete_playlist_item());
 
 	}
 
@@ -149,7 +159,7 @@ public class sample extends Utils {
 		}
 		else if(method.equalsIgnoreCase("delete")) {
 			
-			res = new ResponseSpecBuilder().expectStatusCode(200).build();
+			res = new ResponseSpecBuilder().build();
 			System.out.println("Response is " + res);
 
 			getresponse = req.when().delete(strAPIResource).then().spec(res).extract().response();
@@ -174,6 +184,28 @@ public class sample extends Utils {
 		assertEquals(getresponse.getStatusCode(), 200);
 
 	}
+	
+	@Then("user verify invalid status code is {int}")
+	public void user_verify_invalid_status_code_is(Integer int1) {
+
+		System.out.println(getresponse.getStatusCode());
+		assertEquals(getresponse.getStatusCode(), 400);
+
+	}
+	
+	@Then("user verify invalid message is {string}")
+	public void user_verify_invalid_message(String message) {
+		
+		invalidjson_response = getjsonpath(getresponse, "error.message");
+		System.out.println(invalidjson_response);
+		
+		assertTrue(invalidjson_response.contains(message));
+		
+		
+	}
+	
+	
+	
 
 	@Then("{string} in response body is {string}")
 	public void status_in_reponse_body_is_ok(String keyvalue, String Expectedvalue) {

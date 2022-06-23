@@ -3,13 +3,9 @@ package Resources;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
-
-
-
 import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
 import io.restassured.authentication.AuthenticationScheme;
-import io.restassured.authentication.OAuth2Scheme;
 import io.restassured.authentication.OAuthScheme;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -22,7 +18,7 @@ import io.restassured.specification.RequestSpecification;
 public class Utils {
 
 	public static RequestSpecification req;
-	static String oauthtoken = "BQAXhb6nHOpoOmKABeH5KVq0bAaC4LdweFTE8gHZyQ_e8YHq9-ltx0ZCG8vQqQddzdggS9LzFxiK-seUpFwt9AoXXPwKBNQg9RmxYMy46UFSy386Us1gTuCn0Yf_eo8tVpaOxxr9hSQfs0g9BU2vA4ZOr02zEhxYHS0hIpu0Z2k3_xgXPsZ1-Hyl5bPWPmBnICo8iU42rii9W_EpU_K2AqzyRivmgQ__52ZsjZuAw9dFVAiw3-MQjy62MeG5ukyQjy3HWjGsAkMP0pw";
+	static String oauthtoken = "BQB0jEH3ssfBUCEZxjlWI_nJe3xxudWzt-ua3HrDXBMqsDNQ-OnwK41750psWXnZYBHRnOVQ-f80GaqEGno4-PTTIP0OeP5Nx2h9k9YIH6wj4nF10xe-g49Tfxi87fMV-qIRJr-GT-_YIe6DjdqGOvbecRGQYYZY0I75Ag161FNfDV1yLeob00ZO9an214kObsmXQR9rb8kYDbmt5A7Yyy06aX7MWE_iFfzVgFuha9UttObKa5yn130GYUZyAQXPEKinEZs5gQxt3w";
 	static String accesstoken;
 	public JsonPath json;
 
@@ -78,20 +74,12 @@ public class Utils {
 
 	}
 
-	public static AuthenticationScheme oauth(String consumerKey, String consumerSecret, String accessToken,
-			String secretToken) {
-		OAuthScheme scheme = new OAuthScheme();
-		scheme.setConsumerKey(consumerKey);
-		scheme.setConsumerSecret(consumerSecret);
-		scheme.setAccessToken(accessToken);
-		scheme.setSecretToken(secretToken);
-		return scheme;
-	}
-
+	
 	public String auth2token() {
 
 		String token = given().urlEncodingEnabled(false)
-
+				.contentType(ContentType.URLENC)
+                
 				.queryParam("client_id", "4e95ed2a5096419d92787be74f2e0e8c")
 				.queryParam("client_secret", "b72989f7c4ca4a49982fe66e60a0edb1")
 				.queryParam("callback_url", "https://oauth.pstmn.io/v1/browser-callback")
