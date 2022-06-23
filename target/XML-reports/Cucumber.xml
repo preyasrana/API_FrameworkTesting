@@ -1,48 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="18.426">
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="15.917">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="16.307">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="15.43">
         <system-out>
             <![CDATA[When user are calling "get_newrelease" with "get" http request..............passed
 Then user verify status code is 200.........................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Create_playlist api functionality its working" time="0.456">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.238">
         <system-out>
-            <![CDATA[Given add playlist..........................................................passed
-When user are calling "post_createplaylist" with "post" http request........passed
-Then get playlistid.........................................................passed
+            <![CDATA[When user are using "get_newrelease" with "get" http request................passed
+Then user are verify invalid status code is "401"...........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Additemto_playlist api functionality its working" time="0.476">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.362">
         <system-out>
-            <![CDATA[Given add itemtoplaylist....................................................passed
-When user are calling "post_additemstoplaylist" with "post" http request....passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Change_playlistdetail api functionality its working" time="0.468">
-        <system-out>
-            <![CDATA[Given update itemtoplaylist.................................................passed
-When user are calling "put_changeplaylistdetail" with "put" http request....passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if remove_playlistitem api functionality its working" time="0.387">
-        <system-out>
-            <![CDATA[Given delete itemtoplaylist.................................................passed
-When user are calling "del_removeitemplaylist" with "delete" http request...passed
-Then user verify status code is 200.........................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if invalid trackid wise remove_playlistitem api functionality" time="0.413">
-        <system-out>
-            <![CDATA[Given invaliddelete itemtoplaylist..........................................passed
-When user are calling "del_removeitemplaylist" with "delete" http request...passed
-Then user verify invalid status code is 400.................................passed
-Then user verify invalid message is "JSON body contains an invalid track uri".passed
+            <![CDATA[When user are using Expire token "get_newrelease" with "get" http request...passed
+Then user verify message is "The access token expired"......................passed
+Then user are verify invalid status code is "401"...........................passed
 ]]>
         </system-out>
     </testcase>

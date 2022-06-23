@@ -25,7 +25,7 @@ import io.restassured.specification.RequestSpecification;
 public class Utils {
 
 	public static RequestSpecification req;
-	static String oauthtoken = "BQCUB3ATFT_ADa7iLIzdb3kkR4Yj5-d2qpuOqCCa-WSWxPcEn56T-XghwbXLK2QEBUBtx91-dzGuCEOUOafGO9WWaCvfU79A36-leTdox9ct68-SFNoXmZrW3AdasXd26mMir-LV40FOquINNmSHLYg1Q-EVI5cit0cpxJayqxwFoJuwYh-UwqW27KaoYYyLmUJ647nsQbyOH7kERBM";
+	static String oauthtoken = "BQCUB3ATFT_ADa7iLIzdb3kkR4Yj5-d2qpWSWxPcEn56T-XghwbXLK2QEBUBtx91-dzGuCEOUOafGO9WWaCvfU79A36-leTdox9ct68-SFNoXmZrW3AdasXd26mMir-LV40FOquINNmSHLYg1Q-EVI5cit0cpxJayqxwFoJuwYh-UwqW27KaoYYyLmUJ647nsQbyOH7kERBM";
 	static String accesstoken;
 	public static JsonPath json;
 	public static WebDriver driver;
@@ -81,6 +81,26 @@ public class Utils {
 		return req;
 
 	}
+	
+	
+	public RequestSpecification expire_auth2_requestspecification() throws FileNotFoundException, InterruptedException {
+
+		if (req == null) {
+			PrintStream log = new PrintStream(new FileOutputStream("auth2logging.txt"));
+
+			RestAssured.baseURI = ConfigReader.init_prop().getProperty("spotify_baseurl");
+
+			req = new RequestSpecBuilder().setBaseUri(ConfigReader.init_prop().getProperty("spotify_baseurl"))
+					
+					.addFilter(RequestLoggingFilter.logRequestTo(log))
+					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
+
+			return req;
+		}
+		return req;
+
+	}
+
 
 	
 	public static String auth2token() throws InterruptedException {

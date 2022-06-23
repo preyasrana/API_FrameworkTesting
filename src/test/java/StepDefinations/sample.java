@@ -34,6 +34,8 @@ public class sample extends Utils {
 	static String spotify_uri;
 	static String playlistid;
 	static String invalidjson_response;
+	
+	static String oauthtoken = "Bearer BQCUB3ATFT_ADa7iLIzdb3kkR4Yj5-d2qpuOqCCa-WSWxPcEn56T-XghwbXLK2QEBUBtx91-dzGuCEOUOafGO9WWaCvfU79A36-leTdox9ct68-SFNoXmZrW3AdasXd26mMir-LV40FOquINNmSHLYg1Q-EVI5cit0cpxJayqxwFoJuwYh-UwqW27KaoYYyLmUJ647nsQbyOH7kERBM";
 
 	JsonPath json;
 
@@ -109,6 +111,48 @@ public class sample extends Utils {
 			getresponse = req.when().get(apiresource.getResource()).then().spec(res).extract().response();
 
 	}
+	
+	
+	@When("user are using {string} with {string} http request")
+	public void user_are_using_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
+		
+		APIsList apiresource = APIsList.valueOf(resource);
+		String strAPIResource = apiresource.getResource();
+		System.out.println(strAPIResource);
+		
+		if (method.equalsIgnoreCase("get")) {
+			
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = given().get(apiresource.getResource()).then().spec(res)
+					.extract().response();
+			System.out.println(getresponse);
+		}
+	
+	}
+	
+	
+	@When("user are using Expire token {string} with {string} http request")
+	public void user_are_using_Expire_token_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
+		
+		APIsList apiresource = APIsList.valueOf(resource);
+		String strAPIResource = apiresource.getResource();
+		System.out.println(strAPIResource);
+		
+		if (method.equalsIgnoreCase("get")) {
+			
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = given().header("Authorization",oauthtoken).get(apiresource.getResource()).then().spec(res)
+					.extract().response();
+			System.out.println(getresponse);
+		}
+	
+	}
+	
+	
 
 	@When("user are calling {string} with {string} http request")
 	public void user_are_calling_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
@@ -193,6 +237,14 @@ public class sample extends Utils {
 
 	}
 	
+	@Then("user are verify invalid status code is {string}")
+	public void user_are_verify_invalid_status_code_is(String status_code) {
+		
+		System.out.println(getresponse.getStatusCode());
+		assertEquals(getresponse.getStatusCode(),Integer.parseInt(status_code));
+	}
+	
+	
 	@Then("user verify invalid message is {string}")
 	public void user_verify_invalid_message(String message) {
 		
@@ -204,6 +256,15 @@ public class sample extends Utils {
 		
 	}
 	
+	@Then("user verify message is {string}")
+	public void user_verify_message_is(String message) {
+		
+		invalidjson_response = getjsonpath(getresponse, "error.message");
+		System.out.println(invalidjson_response);
+		
+		assertEquals(invalidjson_response, message);
+		
+	}
 	
 	
 
