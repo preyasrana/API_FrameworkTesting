@@ -3,7 +3,14 @@ package Resources;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import static io.restassured.RestAssured.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import io.restassured.authentication.AuthenticationScheme;
 import io.restassured.authentication.OAuthScheme;
@@ -18,9 +25,10 @@ import io.restassured.specification.RequestSpecification;
 public class Utils {
 
 	public static RequestSpecification req;
-	static String oauthtoken = "BQB0jEH3ssfBUCEZxjlWI_nJe3xxudWzt-ua3HrDXBMqsDNQ-OnwK41750psWXnZYBHRnOVQ-f80GaqEGno4-PTTIP0OeP5Nx2h9k9YIH6wj4nF10xe-g49Tfxi87fMV-qIRJr-GT-_YIe6DjdqGOvbecRGQYYZY0I75Ag161FNfDV1yLeob00ZO9an214kObsmXQR9rb8kYDbmt5A7Yyy06aX7MWE_iFfzVgFuha9UttObKa5yn130GYUZyAQXPEKinEZs5gQxt3w";
+	static String oauthtoken = "BQCUB3ATFT_ADa7iLIzdb3kkR4Yj5-d2qpuOqCCa-WSWxPcEn56T-XghwbXLK2QEBUBtx91-dzGuCEOUOafGO9WWaCvfU79A36-leTdox9ct68-SFNoXmZrW3AdasXd26mMir-LV40FOquINNmSHLYg1Q-EVI5cit0cpxJayqxwFoJuwYh-UwqW27KaoYYyLmUJ647nsQbyOH7kERBM";
 	static String accesstoken;
-	public JsonPath json;
+	public static JsonPath json;
+	public static WebDriver driver;
 
 	public RequestSpecification requestspecification() throws FileNotFoundException {
 
@@ -57,7 +65,7 @@ public class Utils {
 
 	}
 
-	public RequestSpecification auth2_requestspecification() throws FileNotFoundException {
+	public RequestSpecification auth2_requestspecification() throws FileNotFoundException, InterruptedException {
 
 		if (req == null) {
 			PrintStream log = new PrintStream(new FileOutputStream("auth2logging.txt"));
@@ -65,7 +73,7 @@ public class Utils {
 			RestAssured.baseURI = ConfigReader.init_prop().getProperty("spotify_baseurl");
 
 			req = new RequestSpecBuilder().setBaseUri(ConfigReader.init_prop().getProperty("spotify_baseurl"))
-					.setAuth(oauth2(oauthtoken)).addFilter(RequestLoggingFilter.logRequestTo(log))
+					.setAuth(oauth2(auth2token())).addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
 
 			return req;
@@ -75,20 +83,40 @@ public class Utils {
 	}
 
 	
-	public String auth2token() {
+	public static String auth2token() throws InterruptedException {
+		
+		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://accounts.spotify.com/authorize?client_id=4e95ed2a5096419d92787be74f2e0e8c&response_type=code\n"
+				+ "&scope=playlist-modify-public playlist-read-private playlist-modify-private&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback");
+		
+		driver.findElement(By.id("login-username")).sendKeys(ConfigReader.init_prop().getProperty("emailid"));
+		Thread.sleep(2000);
+		driver.findElement(By.id("login-password")).sendKeys(ConfigReader.init_prop().getProperty("password"));
+		Thread.sleep(2000);
+		driver.findElement(By.id("login-button")).click();
+		Thread.sleep(3000);
+		
 
-		String token = given().urlEncodingEnabled(false)
-				.contentType(ContentType.URLENC)
-                
+		String url = driver.getCurrentUrl();
+		System.out.println("url is --->" + url);
+		
+		String Partialcode = url.split("code=")[1];
+		String code = Partialcode.split("&scope")[0];
+		System.out.println(code);
+		
+		String token = given().urlEncodingEnabled(false).queryParam("code", code)
 				.queryParam("client_id", "4e95ed2a5096419d92787be74f2e0e8c")
 				.queryParam("client_secret", "b72989f7c4ca4a49982fe66e60a0edb1")
-				.queryParam("callback_url", "https://oauth.pstmn.io/v1/browser-callback")
+				.queryParam("redirect_uri", "https://oauth.pstmn.io/v1/browser-callback")
 				.queryParam("grant_type", "authorization_code")
-				.queryParam("Auth_URL", "https://accounts.spotify.com/authorize")
-				.queryParam("Scope", "playlist-modify-public playlist-read-private playlist-modify-private")
 
 				.when().log().all().post("https://accounts.spotify.com/api/token").asString();
-
+		
+		
 		System.out.println(token);
 
 		json = Utils.rawToJson(token);

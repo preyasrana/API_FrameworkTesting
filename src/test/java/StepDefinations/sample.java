@@ -58,14 +58,14 @@ public class sample extends Utils {
 	}
 
 	@Given("add playlist")
-	public void add_playlist() throws FileNotFoundException {
+	public void add_playlist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification()).body(testdata.create_playlist());
 
 	}
 	
 	@Given("update itemtoplaylist")
-	public void update_itemtoplaylist() throws FileNotFoundException {
+	public void update_itemtoplaylist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification()).body(testdata.update_playlist());
 
@@ -73,21 +73,21 @@ public class sample extends Utils {
 	
 	
 	@Given("delete itemtoplaylist")
-	public void delete_itemtoplaylist() throws FileNotFoundException {
+	public void delete_itemtoplaylist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification()).body(testdata.delete_playlist_item());
 
 	}
 	
 	@Given("invaliddelete itemtoplaylist")
-	public void invaliddelete_itemtoplaylist() throws FileNotFoundException {
+	public void invaliddelete_itemtoplaylist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification()).body(testdata.invalid_delete_playlist_item());
 
 	}
 
 	@Given("add itemtoplaylist")
-	public void add_itemtoplaylist() throws FileNotFoundException {
+	public void add_itemtoplaylist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification()).queryParams("uris",ConfigReader.init_prop().getProperty("trackid"));
 				
@@ -111,7 +111,7 @@ public class sample extends Utils {
 	}
 
 	@When("user are calling {string} with {string} http request")
-	public void user_are_calling_with_http_request(String resource, String method) throws FileNotFoundException {
+	public void user_are_calling_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
 
 		APIsList apiresource = APIsList.valueOf(resource);
 		String strAPIResource = apiresource.getResource();
