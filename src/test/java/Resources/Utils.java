@@ -82,24 +82,6 @@ public class Utils {
 
 	}
 	
-	
-	public RequestSpecification expire_auth2_requestspecification() throws FileNotFoundException, InterruptedException {
-
-		if (req == null) {
-			PrintStream log = new PrintStream(new FileOutputStream("auth2logging.txt"));
-
-			RestAssured.baseURI = ConfigReader.init_prop().getProperty("spotify_baseurl");
-
-			req = new RequestSpecBuilder().setBaseUri(ConfigReader.init_prop().getProperty("spotify_baseurl"))
-					
-					.addFilter(RequestLoggingFilter.logRequestTo(log))
-					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
-
-			return req;
-		}
-		return req;
-
-	}
 
 
 	

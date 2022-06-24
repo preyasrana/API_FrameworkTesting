@@ -66,6 +66,14 @@ public class sample extends Utils {
 
 	}
 	
+	@Given("without auth add playlist")
+	public void without_auth_add_playlist() throws FileNotFoundException, InterruptedException {
+
+		req = given().body(testdata.create_playlist());
+
+	}
+	
+	
 	@Given("update itemtoplaylist")
 	public void update_itemtoplaylist() throws FileNotFoundException, InterruptedException {
 
@@ -113,12 +121,21 @@ public class sample extends Utils {
 	}
 	
 	
-	@When("user are using {string} with {string} http request")
+	@When("user are using without token {string} with {string} http request")
 	public void user_are_using_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
 		
 		APIsList apiresource = APIsList.valueOf(resource);
 		String strAPIResource = apiresource.getResource();
 		System.out.println(strAPIResource);
+
+		if (strAPIResource.contains(":user_id")) {
+			strAPIResource = strAPIResource.replace(":user_id", ConfigReader.init_prop().getProperty("UserId"));
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		} else if (strAPIResource.contains(":playlistid")) {
+			strAPIResource = strAPIResource.replace(":playlistid", playlistid);
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		}
+		
 		
 		if (method.equalsIgnoreCase("get")) {
 			
@@ -129,6 +146,18 @@ public class sample extends Utils {
 					.extract().response();
 			System.out.println(getresponse);
 		}
+		
+		if (method.equalsIgnoreCase("post")) {
+			
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().post(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+	
+			
+		}
+		
 	
 	}
 	
@@ -146,6 +175,39 @@ public class sample extends Utils {
 			System.out.println("Response is " + res);
 
 			getresponse = given().header("Authorization",oauthtoken).get(apiresource.getResource()).then().spec(res)
+					.extract().response();
+			System.out.println(getresponse);
+		}
+		if (method.equalsIgnoreCase("post")) {
+			
+			
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = given().header("Authorization",oauthtoken).get(apiresource.getResource()).then().spec(res)
+					.extract().response();
+			System.out.println(getresponse);
+			
+			
+		}
+		
+	
+	}
+	
+	
+	@When("user are using invalid url with {string} with {string} http request")
+	public void user_are_using_invalid_url_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
+		
+		APIsList apiresource = APIsList.valueOf(resource);
+		String strAPIResource = apiresource.getResource();
+		System.out.println(strAPIResource);
+		
+		if (method.equalsIgnoreCase("get")) {
+			
+			res = new ResponseSpecBuilder().build();
+			System.out.println("Response is " + res);
+
+			getresponse = given().spec(auth2_requestspecification()).get(apiresource.getResource()).then().spec(res)
 					.extract().response();
 			System.out.println(getresponse);
 		}

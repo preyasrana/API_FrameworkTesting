@@ -23,7 +23,17 @@ public enum APIsList {
 	post_createplaylist("/users/:user_id/playlists"),
 	post_additemstoplaylist("/playlists/:playlistid/tracks"),
 	put_changeplaylistdetail("/playlists/:playlistid"),
-	del_removeitemplaylist("/playlists/:playlistid/tracks");
+	del_removeitemplaylist("/playlists/:playlistid/tracks"),
+	
+	
+	
+	//Wrong Sptify Urls
+	wrong_get_newrelease("/browse/new-releases-wrong");
+	
+	
+	
+	
+	
 	
 
 	private String resource;

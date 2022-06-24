@@ -8,7 +8,7 @@ Feature: Verify SpotifyAuth2.0 Functionality
 
   @Regression
   Scenario Outline: Verify Without Token playlistitem api functionality
-    When user are using "get_newrelease" with "get" http request
+    When user are using without token "get_newrelease" with "get" http request
     Then user are verify invalid status code is "<status_code>"
 
     Examples: 
@@ -24,15 +24,53 @@ Feature: Verify SpotifyAuth2.0 Functionality
     Examples: 
       | message                  | status_code |
       | The access token expired |         401 |
-      
-      
+
+  @Regression
+  Scenario Outline: Verify invalid url wise create playlistitem api functionality
+    When user are using invalid url with "wrong_get_newrelease" with "get" http request
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | status_code |
+      |         404 |
 
   #Create playlist item related functionality
-  # @smoketest
+  @smoketest
   Scenario: Verify if Create_playlist api functionality its working
     Given add playlist
     When user are calling "post_createplaylist" with "post" http request
     Then get playlistid
+
+  @Regression
+  Scenario Outline: Verify Without Token playlistitem api functionality
+    Given without auth add playlist
+    When user are using without token "post_createplaylist" with "post" http request
+    Then user are verify invalid status code is "<status_code>"
+    Then user verify message is "<message>"
+
+    Examples: 
+      | message           | status_code |
+      | No token provided |         401 |
+      
+  @Regression
+  Scenario Outline: Verify Expire Token playlistitem api functionality
+     Given without auth add playlist
+    When user are using Expire token "post_createplaylist" with "post" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                  | status_code |
+      | The access token expired |         401 |  
+      
+ 
+      
+      
+      
+        
+      
+      
+      
 
   #Add item to playlist related functionality
   # @smoketest

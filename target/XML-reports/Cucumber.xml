@@ -1,22 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="16.307">
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="15.43">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="18.196">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="15.652">
         <system-out>
             <![CDATA[When user are calling "get_newrelease" with "get" http request..............passed
 Then user verify status code is 200.........................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.238">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.445">
         <system-out>
-            <![CDATA[When user are using "get_newrelease" with "get" http request................passed
+            <![CDATA[When user are using without token "get_newrelease" with "get" http request..passed
 Then user are verify invalid status code is "401"...........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.362">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.388">
         <system-out>
             <![CDATA[When user are using Expire token "get_newrelease" with "get" http request...passed
+Then user verify message is "The access token expired"......................passed
+Then user are verify invalid status code is "401"...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify invalid url wise create playlistitem api functionality" time="0.207">
+        <system-out>
+            <![CDATA[When user are using invalid url with "wrong_get_newrelease" with "get" http request.passed
+Then user are verify invalid status code is "404"...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Create_playlist api functionality its working" time="0.512">
+        <system-out>
+            <![CDATA[Given add playlist..........................................................passed
+When user are calling "post_createplaylist" with "post" http request........passed
+Then get playlistid.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.298">
+        <system-out>
+            <![CDATA[Given without auth add playlist.............................................passed
+When user are using without token "post_createplaylist" with "post" http request.passed
+Then user are verify invalid status code is "401"...........................passed
+Then user verify message is "No token provided".............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.273">
+        <system-out>
+            <![CDATA[Given without auth add playlist.............................................passed
+When user are using Expire token "post_createplaylist" with "post" http request.passed
 Then user verify message is "The access token expired"......................passed
 Then user are verify invalid status code is "401"...........................passed
 ]]>

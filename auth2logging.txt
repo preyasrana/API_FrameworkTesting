@@ -23,7 +23,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Thu, 23 Jun 2022 13:07:45 GMT
+date: Fri, 24 Jun 2022 05:09:59 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4667,4 +4667,109 @@ Transfer-Encoding: chunked
         "previous": null,
         "total": 100
     }
+}
+Request method:	GET
+Request URI:	https://api.spotify.com/v1/browse/new-releases-wrong
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+cache-control: private, max-age=0
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+Content-Length: 0
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Fri, 24 Jun 2022 05:10:01 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4/playlists
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Preyas Playlist",
+    "description": "Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 201 Created
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+location: https://api.spotify.com/v1/playlists/5tRQwozt5AsQ56JSmDdGTA
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Fri, 24 Jun 2022 05:10:00 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "collaborative": false,
+    "description": "Preyas playlist description",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5tRQwozt5AsQ56JSmDdGTA"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/5tRQwozt5AsQ56JSmDdGTA",
+    "id": "5tRQwozt5AsQ56JSmDdGTA",
+    "images": [
+        
+    ],
+    "name": "Preyas Playlist",
+    "owner": {
+        "display_name": "preyas",
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/316u2kbs3igfzhgmddihg5l72yr4"
+        },
+        "href": "https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4",
+        "id": "316u2kbs3igfzhgmddihg5l72yr4",
+        "type": "user",
+        "uri": "spotify:user:316u2kbs3igfzhgmddihg5l72yr4"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MSw4Njg1OGMxNGFmZGEzMmZhZGRlYjg4ZGFkYWY5ZjU0NzM3MjFiYTZl",
+    "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5tRQwozt5AsQ56JSmDdGTA/tracks",
+        "items": [
+            
+        ],
+        "limit": 100,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 0
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:5tRQwozt5AsQ56JSmDdGTA"
 }
