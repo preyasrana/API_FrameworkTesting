@@ -28,8 +28,8 @@ public enum APIsList {
 	
 	
 	//Wrong Sptify Urls
-	wrong_get_newrelease("/browse/new-releases-wrong");
-	
+	wrong_get_newrelease("/browse/new-releases-wrong"),
+	wrong_post_createplaylist("/users/:user_id/playlists-wrong");
 	
 	
 	

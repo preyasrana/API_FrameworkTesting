@@ -84,8 +84,39 @@ Feature: Verify SpotifyAuth2.0 Functionality
     Examples: 
       | message             | status_code |
       | Error parsing JSON. |         400 |
-      
-      
+
+  @Regression
+  Scenario Outline: Verify if wrong url with Create_playlist api functionality its working
+    Given add playlist
+    When user are calling "wrong_post_createplaylist" with "post" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message           | status_code |
+      | Service not found |         404 |
+
+  @Regression
+  Scenario Outline: Verify if invalid Userid with Create_playlist api functionality its working
+    Given add playlist
+    When user are calling with invalid userid to "post_createplaylist" with "post" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                                        | status_code |
+      | You cannot create a playlist for another user. |         403 |
+
+  @Regression
+  Scenario Outline: Verify if blank Userid with Create_playlist api functionality its working
+    Given add playlist
+    When user are calling with blank userid to "post_createplaylist" with "post" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message          | status_code |
+      | Invalid username |         404 |
       
       
 

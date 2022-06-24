@@ -5,6 +5,10 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.FileNotFoundException;
+
+import org.apache.commons.codec.DecoderException;
+import org.apache.commons.codec.net.URLCodec;
+
 import Resources.APIsList;
 import Resources.ConfigReader;
 import Resources.TestDataBuild;
@@ -227,6 +231,60 @@ public class sample extends Utils {
 		}
 	
 	}
+	
+	
+	@When("user are calling with invalid userid to {string} with {string} http request")
+	public void user_are_calling_with_invalid_userid_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
+		
+		APIsList apiresource = APIsList.valueOf(resource);
+		String strAPIResource = apiresource.getResource();
+		System.out.println(strAPIResource);
+
+		if (strAPIResource.contains(":user_id")) {
+			strAPIResource = strAPIResource.replace(":user_id", ConfigReader.init_prop().getProperty("InvalidUserId"));
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		} 
+		
+		  if (method.equalsIgnoreCase("post")) {
+
+				res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+				System.out.println("Response is " + res);
+
+				getresponse = req.when().post(strAPIResource).then().spec(res).extract().response();
+				System.out.println(getresponse);
+
+			}
+		
+		
+	
+	}
+	
+	
+	@When("user are calling with blank userid to {string} with {string} http request")
+	public void user_are_calling_with_blank_userid_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException, DecoderException {
+		
+		APIsList apiresource = APIsList.valueOf(resource);
+		String strAPIResource = apiresource.getResource();
+		System.out.println(strAPIResource);
+		String decodedUrl = new URLCodec().decode(strAPIResource);
+		
+
+		if (decodedUrl.contains(":user_id")) {
+			decodedUrl = decodedUrl.replace(":user_id", ConfigReader.init_prop().getProperty("blankUserId"));
+			System.out.println("Replaced userId in enum: " + decodedUrl);
+		} 
+		
+		  if (method.equalsIgnoreCase("post")) {
+
+				res = new ResponseSpecBuilder().build();	
+				
+				System.out.println("Response is " + res);
+
+				getresponse = req.when().post(strAPIResource).then().spec(res).extract().response();
+				System.out.println(getresponse);
+
+			}
+	    }
 	
 	
 
