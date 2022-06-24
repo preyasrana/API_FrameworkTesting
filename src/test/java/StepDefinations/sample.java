@@ -73,6 +73,20 @@ public class sample extends Utils {
 
 	}
 	
+	@Given("missing requiredfield payload to add playlist")
+	public void missing_requiredfield_payload_to_add_playlist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification()).body(testdata.missing_required_payload());
+
+	}
+	
+	@Given("blank payload to add playlist")
+	public void blank_payload_to_add_playlist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification());
+
+	}
+	
 	
 	@Given("update itemtoplaylist")
 	public void update_itemtoplaylist() throws FileNotFoundException, InterruptedException {

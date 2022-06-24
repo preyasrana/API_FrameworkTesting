@@ -51,23 +51,40 @@ Feature: Verify SpotifyAuth2.0 Functionality
     Examples: 
       | message           | status_code |
       | No token provided |         401 |
-      
+
   @Regression
   Scenario Outline: Verify Expire Token playlistitem api functionality
-     Given without auth add playlist
+    Given without auth add playlist
     When user are using Expire token "post_createplaylist" with "post" http request
     Then user verify message is "<message>"
     Then user are verify invalid status code is "<status_code>"
 
     Examples: 
       | message                  | status_code |
-      | The access token expired |         401 |  
+      | The access token expired |         401 |
+
+  @Regression
+  Scenario Outline: Verify if missing requiredfield payload with Create_playlist api functionality its working
+    Given missing requiredfield payload to add playlist
+    When user are calling "post_createplaylist" with "post" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                | status_code |
+      | Missing required field |         400 |
+
+  @Regression
+  Scenario Outline: Verify if blank payload with Create_playlist api functionality its working
+    Given blank payload to add playlist
+    When user are calling "post_createplaylist" with "post" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Error parsing JSON. |         400 |
       
- 
-      
-      
-      
-        
       
       
       

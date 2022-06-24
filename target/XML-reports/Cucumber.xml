@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="18.196">
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="15.652">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="18.663">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Get_newreleases api functionality its working" time="15.692">
         <system-out>
             <![CDATA[When user are calling "get_newrelease" with "get" http request..............passed
 Then user verify status code is 200.........................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.445">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.288">
         <system-out>
             <![CDATA[When user are using without token "get_newrelease" with "get" http request..passed
 Then user are verify invalid status code is "401"...........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.388">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.405">
         <system-out>
             <![CDATA[When user are using Expire token "get_newrelease" with "get" http request...passed
 Then user verify message is "The access token expired"......................passed
@@ -22,14 +22,14 @@ Then user are verify invalid status code is "401"...........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify invalid url wise create playlistitem api functionality" time="0.207">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify invalid url wise create playlistitem api functionality" time="0.225">
         <system-out>
             <![CDATA[When user are using invalid url with "wrong_get_newrelease" with "get" http request.passed
 Then user are verify invalid status code is "404"...........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Create_playlist api functionality its working" time="0.512">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if Create_playlist api functionality its working" time="0.406">
         <system-out>
             <![CDATA[Given add playlist..........................................................passed
 When user are calling "post_createplaylist" with "post" http request........passed
@@ -37,7 +37,7 @@ Then get playlistid.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.298">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Without Token playlistitem api functionality" time="0.303">
         <system-out>
             <![CDATA[Given without auth add playlist.............................................passed
 When user are using without token "post_createplaylist" with "post" http request.passed
@@ -46,12 +46,30 @@ Then user verify message is "No token provided".............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.273">
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify Expire Token playlistitem api functionality" time="0.261">
         <system-out>
             <![CDATA[Given without auth add playlist.............................................passed
 When user are using Expire token "post_createplaylist" with "post" http request.passed
 Then user verify message is "The access token expired"......................passed
 Then user are verify invalid status code is "401"...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if missing requiredfield payload with Create_playlist api functionality its working" time="0.291">
+        <system-out>
+            <![CDATA[Given missing requiredfield payload to add playlist.........................passed
+When user are calling "post_createplaylist" with "post" http request........passed
+Then user verify invalid message is "Missing required field"................passed
+Then user are verify invalid status code is "400"...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify SpotifyAuth2.0 Functionality" name="Verify if blank payload with Create_playlist api functionality its working" time="0.314">
+        <system-out>
+            <![CDATA[Given blank payload to add playlist.........................................passed
+When user are calling "post_createplaylist" with "post" http request........passed
+Then user verify invalid message is "Error parsing JSON."...................passed
+Then user are verify invalid status code is "400"...........................passed
 ]]>
         </system-out>
     </testcase>
