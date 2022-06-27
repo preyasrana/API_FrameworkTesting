@@ -99,7 +99,7 @@ Feature: Verify SpotifyAuth2.0 Functionality
   @Regression
   Scenario Outline: Verify if invalid Userid with Create_playlist api functionality its working
     Given add playlist
-    When user are calling with invalid userid to "post_createplaylist" with "post" http request
+    When user are calling with invalid id to "post_createplaylist" with "post" http request
     Then user verify message is "<message>"
     Then user are verify invalid status code is "<status_code>"
 
@@ -110,27 +110,145 @@ Feature: Verify SpotifyAuth2.0 Functionality
   @Regression
   Scenario Outline: Verify if blank Userid with Create_playlist api functionality its working
     Given add playlist
-    When user are calling with blank userid to "post_createplaylist" with "post" http request
+    When user are calling with blank id to "post_createplaylist" with "post" http request
     Then user verify message is "<message>"
     Then user are verify invalid status code is "<status_code>"
 
     Examples: 
       | message          | status_code |
       | Invalid username |         404 |
-      
-      
 
   #Add item to playlist related functionality
-  # @smoketest
+  @smoketest
   Scenario: Verify if Additemto_playlist api functionality its working
     Given add itemtoplaylist
     When user are calling "post_additemstoplaylist" with "post" http request
 
+  @Regression
+  Scenario Outline: Verify Without Token add item to playlist api functionality
+    Given without auth add itemtoplaylist
+    When user are using without token "post_additemstoplaylist" with "post" http request
+    Then user are verify invalid status code is "<status_code>"
+    Then user verify message is "<message>"
+
+    Examples: 
+      | message           | status_code |
+      | No token provided |         401 |
+
+  @Regression
+  Scenario Outline: Verify Expire Token wise add item to playlist api functionality
+    Given without auth add itemtoplaylist
+    When user are using Expire token "post_additemstoplaylist" with "post" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                  | status_code |
+      | The access token expired |         401 |
+
+  @Regression
+  Scenario Outline: Verify if wrong url with add item to playlist api functionality
+    Given add itemtoplaylist
+    When user are calling "wrong_post_additemstoplaylist" with "post" http request
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | status_code |
+      |         404 |
+
+  @Regression
+  Scenario Outline: Verify if invalid trackid with add item to playlist api functionality
+    Given invalid trackid with add itemtoplaylist
+    When user are calling with invalid id to "post_additemstoplaylist" with "post" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message           | status_code |
+      | Invalid track uri |         400 |
+
+  @Regression
+  Scenario Outline: Verify if invalid playlist id with add item to playlist api functionality
+    Given add itemtoplaylist
+    When user are calling with invaliddata "post_additemstoplaylist" with "post" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Invalid playlist Id |         404 |
+
+  @Regression
+  Scenario Outline: Verify if blank playlistid with add item to playlist api functionality
+    Given add itemtoplaylist
+    When user are calling with blank id to "post_additemstoplaylist" with "post" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Invalid playlist Id |         404 |
+      
+  
+  @Regression
+  Scenario Outline: Verify if blank trackid with add item to playlist api functionality
+    Given add blank trackid with itemtoplaylist    
+    When user are calling "post_additemstoplaylist" with "post" http request 
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Error parsing JSON. |         400 |  
+      
+  @Regression
+  Scenario Outline: Verify if without track uri with add item to playlist api functionality
+    Given add without track uri with itemtoplaylist    
+    When user are calling "post_additemstoplaylist" with "post" http request 
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Error parsing JSON. |         400 | 
+      
+        
+
   #update playlist item related functionality
-  #@smoketest
+  @smoketest
   Scenario: Verify if Change_playlistdetail api functionality its working
     Given update itemtoplaylist
     When user are calling "put_changeplaylistdetail" with "put" http request
+    Then user verify status code is 200
+    
+  @Regression
+  Scenario Outline: Verify Without Token Change_playlistdetail api functionality
+    Given without auth update itemtoplaylist
+    When user are using without token "put_changeplaylistdetail" with "put" http request
+    Then user are verify invalid status code is "<status_code>"
+    Then user verify message is "<message>"
+
+    Examples: 
+      | message           | status_code |
+      | No token provided |         401 |  
+      
+  
+  @Regression
+  Scenario Outline: Verify Expire Token wise Change_playlistdetail api functionality
+    Given without auth update itemtoplaylist
+    When user are using Expire token "put_changeplaylistdetail" with "put" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                  | status_code |
+      | The access token expired |         401 |
+      
+      
+    
+    
+    
+    
 
   #delete playlist item related functionality
   #@smoketest

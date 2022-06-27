@@ -77,6 +77,15 @@ public class sample extends Utils {
 
 	}
 	
+	
+	@Given("without auth add itemtoplaylist")
+	public void without_auth_additemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().queryParams("uris",ConfigReader.init_prop().getProperty("trackid"));
+
+	}
+	
+	
 	@Given("missing requiredfield payload to add playlist")
 	public void missing_requiredfield_payload_to_add_playlist() throws FileNotFoundException, InterruptedException {
 
@@ -96,6 +105,13 @@ public class sample extends Utils {
 	public void update_itemtoplaylist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification()).body(testdata.update_playlist());
+
+	}
+	
+	@Given("without auth update itemtoplaylist")
+	public void without_auth_update_itemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().body(testdata.update_playlist());
 
 	}
 	
@@ -120,6 +136,30 @@ public class sample extends Utils {
 		req = given().spec(auth2_requestspecification()).queryParams("uris",ConfigReader.init_prop().getProperty("trackid"));
 				
 
+	}
+	
+	
+	@Given("add blank trackid with itemtoplaylist")
+	public void add_blank_trackid_with_itemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification()).queryParams("uris",ConfigReader.init_prop().getProperty("blank_trackid"));
+				
+
+	}
+	
+	@Given("add without track uri with itemtoplaylist")
+	public void add_without_track_uri_with_itemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification()).queryParams("uris","");
+				
+
+	}
+	
+	@Given("invalid trackid with add itemtoplaylist")
+	public void invalid_trackid_with_add_itemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification()).queryParams("uris",ConfigReader.init_prop().getProperty("invalidtrackid"));
+				
 	}
 
 	@When("user call {string} with {string} http request")
@@ -176,6 +216,17 @@ public class sample extends Utils {
 			
 		}
 		
+		if (method.equalsIgnoreCase("put")) {
+			
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().put(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+	
+		}
+		
+		
 	
 	}
 	
@@ -196,18 +247,26 @@ public class sample extends Utils {
 					.extract().response();
 			System.out.println(getresponse);
 		}
-		if (method.equalsIgnoreCase("post")) {
-			
-			
+		else if (method.equalsIgnoreCase("post")) {
+				
 			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
 			System.out.println("Response is " + res);
 
 			getresponse = given().header("Authorization",oauthtoken).get(apiresource.getResource()).then().spec(res)
 					.extract().response();
-			System.out.println(getresponse);
-			
+			System.out.println(getresponse);		
 			
 		}
+		else if(method.equalsIgnoreCase("put")) {
+			
+			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.header("Authorization",oauthtoken).when().put(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+		}
+		
+		
 		
 	
 	}
@@ -233,8 +292,8 @@ public class sample extends Utils {
 	}
 	
 	
-	@When("user are calling with invalid userid to {string} with {string} http request")
-	public void user_are_calling_with_invalid_userid_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
+	@When("user are calling with invalid id to {string} with {string} http request")
+	public void user_are_calling_with_invalid_id_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
 		
 		APIsList apiresource = APIsList.valueOf(resource);
 		String strAPIResource = apiresource.getResource();
@@ -244,6 +303,14 @@ public class sample extends Utils {
 			strAPIResource = strAPIResource.replace(":user_id", ConfigReader.init_prop().getProperty("InvalidUserId"));
 			System.out.println("Replaced userId in enum: " + strAPIResource);
 		} 
+		else if (strAPIResource.contains(":playlistid")) {
+			strAPIResource = strAPIResource.replace(":playlistid", playlistid);
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		}
+		
+		
+		
+		
 		
 		  if (method.equalsIgnoreCase("post")) {
 
@@ -260,7 +327,7 @@ public class sample extends Utils {
 	}
 	
 	
-	@When("user are calling with blank userid to {string} with {string} http request")
+	@When("user are calling with blank id to {string} with {string} http request")
 	public void user_are_calling_with_blank_userid_with_http_request(String resource, String method) throws FileNotFoundException, InterruptedException, DecoderException {
 		
 		APIsList apiresource = APIsList.valueOf(resource);
@@ -273,6 +340,15 @@ public class sample extends Utils {
 			decodedUrl = decodedUrl.replace(":user_id", ConfigReader.init_prop().getProperty("blankUserId"));
 			System.out.println("Replaced userId in enum: " + decodedUrl);
 		} 
+		else if (decodedUrl.contains(":playlistid")) {
+			decodedUrl = decodedUrl.replace(":playlistid", ConfigReader.init_prop().getProperty("blankplaylistid"));
+			System.out.println("Replaced userId in enum: " + decodedUrl);
+		}
+		
+		
+		
+		
+		
 		
 		  if (method.equalsIgnoreCase("post")) {
 
@@ -285,6 +361,44 @@ public class sample extends Utils {
 
 			}
 	    }
+	
+	
+	
+	@When("user are calling with invaliddata {string} with {string} http request")
+	public void user_are_calling_with_invaliddata_http_request(String resource, String method) throws FileNotFoundException, InterruptedException {
+		
+		APIsList apiresource = APIsList.valueOf(resource);
+		String strAPIResource = apiresource.getResource();
+		System.out.println(strAPIResource);
+		
+		if (strAPIResource.contains(":user_id")) {
+			strAPIResource = strAPIResource.replace(":user_id", ConfigReader.init_prop().getProperty("UserId"));
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		} else if (strAPIResource.contains(":playlistid")) {
+			strAPIResource = strAPIResource.replace(":playlistid", ConfigReader.init_prop().getProperty("invalid_playlistid"));
+			System.out.println("Replaced userId in enum: " + strAPIResource);
+		}
+		
+		
+		
+		if (method.equalsIgnoreCase("get")) {
+
+		
+
+		} else if (method.equalsIgnoreCase("post")) {
+
+			res = new ResponseSpecBuilder().build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().post(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+
+		}
+		
+		
+		
+	}
+	
 	
 	
 
@@ -320,7 +434,7 @@ public class sample extends Utils {
 
 		} else if (method.equalsIgnoreCase("post")) {
 
-			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			res = new ResponseSpecBuilder().build();
 			System.out.println("Response is " + res);
 
 			getresponse = req.when().post(strAPIResource).then().spec(res).extract().response();
@@ -362,6 +476,8 @@ public class sample extends Utils {
 		assertEquals(getresponse.getStatusCode(), 200);
 
 	}
+	
+	
 	
 	@Then("user verify invalid status code is {int}")
 	public void user_verify_invalid_status_code_is(Integer int1) {
