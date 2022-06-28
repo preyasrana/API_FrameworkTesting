@@ -127,6 +127,30 @@ public class TestDataBuild {
 				+ "}";
 	}
 	
+	public String missing_uri_id() {
+		
+		return "{\n"
+				+ "    \"tracks\": [\n"
+				+ "        {\n"
+				+ "            \"uri\": \"\"\n"
+				+ "        }\n"
+				+ "\n"
+				+ "    ]\n"
+				+ "}";
+	}
+	
+	public String without_uri() {
+		
+		return "{\n"
+				+ "    \"tracks\": [\n"
+				+ "        {\n"
+				+ "        \n"
+				+ "        }\n"
+				+ "\n"
+				+ "    ]\n"
+				+ "}";
+	}
+	
 	
 
 }

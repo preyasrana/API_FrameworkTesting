@@ -86,7 +86,7 @@ public class sample extends Utils {
 	}
 	
 	
-	@Given("missing requiredfield payload to add playlist")
+	@Given("missing requiredfield payload to playlist")
 	public void missing_requiredfield_payload_to_add_playlist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification()).body(testdata.missing_required_payload());
@@ -101,9 +101,22 @@ public class sample extends Utils {
 	}
 	
 	
+	@Given("empty requiredfield payload to remove itemtoplaylist")
+	public void empty_requiredfield_payload_to_remove_itemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification()).body(testdata.missing_uri_id());
+
+	}
+	
+	@Given("without URI payload to remove itemtoplaylist")
+	public void without_URI_payload_to_remove_itemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification()).body(testdata.without_uri());
+
+	}
 	
 	
-	@Given("blank payload to add playlist")
+	@Given("blank payload to playlist")
 	public void blank_payload_to_add_playlist() throws FileNotFoundException, InterruptedException {
 
 		req = given().spec(auth2_requestspecification());
@@ -294,6 +307,15 @@ public class sample extends Utils {
 			getresponse = req.header("Authorization",oauthtoken).when().put(strAPIResource).then().spec(res).extract().response();
 			System.out.println(getresponse);
 		}
+		else if(method.equalsIgnoreCase("delete")) {
+			
+			res = new ResponseSpecBuilder().build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.header("Authorization",oauthtoken).when().delete(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+			
+		}
 		
 		
 		
@@ -398,7 +420,15 @@ public class sample extends Utils {
 				System.out.println(getresponse);
 				
 		   }
-		  
+		  else if(method.equalsIgnoreCase("delete")) {
+				
+				res = new ResponseSpecBuilder().build();
+				System.out.println("Response is " + res);
+
+				getresponse = req.when().delete(strAPIResource).then().spec(res).extract().response();
+				System.out.println(getresponse);
+				
+			}
 		  
 		  
 		  
@@ -447,6 +477,17 @@ public class sample extends Utils {
 			getresponse = req.when().put(strAPIResource).then().spec(res).extract().response();
 			System.out.println(getresponse);
 		}
+	   else if(method.equalsIgnoreCase("delete")) {
+			
+			res = new ResponseSpecBuilder().build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().delete(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+			
+		}
+		
+		
 		
 		
 		

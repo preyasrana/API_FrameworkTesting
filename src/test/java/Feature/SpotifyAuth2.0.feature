@@ -65,7 +65,7 @@ Feature: Verify SpotifyAuth2.0 Functionality
 
   @Regression
   Scenario Outline: Verify if missing requiredfield payload with Create_playlist api functionality its working
-    Given missing requiredfield payload to add playlist
+    Given missing requiredfield payload to playlist
     When user are calling "post_createplaylist" with "post" http request
     Then user verify invalid message is "<message>"
     Then user are verify invalid status code is "<status_code>"
@@ -76,7 +76,7 @@ Feature: Verify SpotifyAuth2.0 Functionality
 
   @Regression
   Scenario Outline: Verify if blank payload with Create_playlist api functionality its working
-    Given blank payload to add playlist
+    Given blank payload to playlist
     When user are calling "post_createplaylist" with "post" http request
     Then user verify invalid message is "<message>"
     Then user are verify invalid status code is "<status_code>"
@@ -274,7 +274,7 @@ Feature: Verify SpotifyAuth2.0 Functionality
 
   @Regression
   Scenario Outline: Verify if blank payload wise Change_playlistdetail api functionality
-    Given blank payload to add playlist
+    Given blank payload to playlist
     When user are calling "put_changeplaylistdetail" with "put" http request
     Then user verify invalid message is "<message>"
     Then user are verify invalid status code is "<status_code>"
@@ -294,16 +294,47 @@ Feature: Verify SpotifyAuth2.0 Functionality
   Scenario Outline: Verify Without Token remove_playlistitem api functionality
     Given without auth remove playlistitem
     When user are using without token "del_removeitemplaylist" with "delete" http request
-     Then user are verify invalid status code is "<status_code>"
+    Then user are verify invalid status code is "<status_code>"
     Then user verify message is "<message>"
 
     Examples: 
       | message           | status_code |
       | No token provided |         401 |
-    
-    
 
-  #@Regression
+  @Regression
+  Scenario Outline: Verify Expire Token wise remove_playlistitem api functionality
+    Given without auth remove playlistitem
+    When user are using Expire token "del_removeitemplaylist" with "delete" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                  | status_code |
+      | The access token expired |         401 |
+
+  @Regression
+  Scenario Outline: Verify Invalid playlist wise remove_playlistitem api functionality
+    Given delete itemtoplaylist
+    When user are calling with invaliddata "del_removeitemplaylist" with "delete" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Invalid playlist Id |         404 |
+
+  @Regression
+  Scenario Outline: Verify if blank playlistid  wise remove_playlistitem api functionality
+    Given delete itemtoplaylist
+    When user are calling with blank id to "del_removeitemplaylist" with "delete" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Invalid playlist Id |         404 |
+
+  @Regression
   Scenario Outline: Verify if invalid trackid wise remove_playlistitem api functionality
     Given invaliddelete itemtoplaylist
     When user are calling "del_removeitemplaylist" with "delete" http request
@@ -313,3 +344,47 @@ Feature: Verify SpotifyAuth2.0 Functionality
     Examples: 
       | message                                 |
       | JSON body contains an invalid track uri |
+
+  @Regression
+  Scenario Outline: Verify if empty requiredfield payload wise remove_playlistitem api functionality
+    Given empty requiredfield payload to remove itemtoplaylist
+    When user are calling "del_removeitemplaylist" with "delete" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                                  | status_code |
+      | JSON body contains an invalid track uri: |         400 |
+
+  @Regression
+  Scenario Outline: Verify if without URI payload wise remove_playlistitem api functionality
+    Given without URI payload to remove itemtoplaylist
+    When user are calling "del_removeitemplaylist" with "delete" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                                 | status_code |
+      | JSON body contains a track without URI. |         400 |
+
+  @Regression
+  Scenario Outline: Verify if missing track payload wise remove_playlistitem api functionality
+    Given missing requiredfield payload to playlist
+    When user are calling "del_removeitemplaylist" with "delete" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message        | status_code |
+      | Missing tracks |         400 |
+      
+  @Regression
+  Scenario Outline: Verify if blank track payload wise remove_playlistitem api functionality
+    Given blank payload to playlist
+    When user are calling "del_removeitemplaylist" with "delete" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message        | status_code |
+      | Missing tracks |         400 |    

@@ -23,7 +23,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:09 GMT
+date: Tue, 28 Jun 2022 06:43:30 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4688,7 +4688,7 @@ access-control-max-age: 604800
 Content-Length: 0
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:11 GMT
+date: Tue, 28 Jun 2022 06:43:31 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4712,7 +4712,7 @@ Body:
 HTTP/1.1 201 Created
 content-type: application/json; charset=utf-8
 cache-control: private, max-age=0
-location: https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO
+location: https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ
 x-robots-tag: noindex, nofollow
 access-control-allow-origin: *
 access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
@@ -4722,7 +4722,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:12 GMT
+date: Tue, 28 Jun 2022 06:43:31 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4732,14 +4732,14 @@ Transfer-Encoding: chunked
     "collaborative": false,
     "description": "Preyas playlist description",
     "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3DTOyLNVYhADYGPPzRP2uO"
+        "spotify": "https://open.spotify.com/playlist/0yeZH3mbuImPCM07v4LuQQ"
     },
     "followers": {
         "href": null,
         "total": 0
     },
-    "href": "https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO",
-    "id": "3DTOyLNVYhADYGPPzRP2uO",
+    "href": "https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ",
+    "id": "0yeZH3mbuImPCM07v4LuQQ",
     "images": [
         
     ],
@@ -4756,9 +4756,9 @@ Transfer-Encoding: chunked
     },
     "primary_color": null,
     "public": false,
-    "snapshot_id": "MSw0YjI0MDViN2JmYTIzMDgxZmU0YjU3OWE4ZWViYWJlYzM0ZDdmMzg3",
+    "snapshot_id": "MSw2YWIyOTg3NjU2MjhhYmI3ZjQwNjJkNzEzMDE5NjA1Y2U5MGRhYTdh",
     "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO/tracks",
+        "href": "https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks",
         "items": [
             
         ],
@@ -4769,7 +4769,7 @@ Transfer-Encoding: chunked
         "total": 0
     },
     "type": "playlist",
-    "uri": "spotify:playlist:3DTOyLNVYhADYGPPzRP2uO"
+    "uri": "spotify:playlist:0yeZH3mbuImPCM07v4LuQQ"
 }
 Request method:	POST
 Request URI:	https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4/playlists
@@ -4798,7 +4798,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:13 GMT
+date: Tue, 28 Jun 2022 06:43:32 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4834,7 +4834,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:13 GMT
+date: Tue, 28 Jun 2022 06:43:32 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4873,7 +4873,7 @@ content-type: application/json
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:13 GMT
+date: Tue, 28 Jun 2022 06:43:33 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4914,7 +4914,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:13 GMT
+date: Tue, 28 Jun 2022 06:43:33 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4955,7 +4955,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:14 GMT
+date: Tue, 28 Jun 2022 06:43:34 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -4968,7 +4968,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	POST
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
 Proxy:			<none>
 Request params:	<none>
 Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy
@@ -4991,17 +4991,17 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:14 GMT
+date: Tue, 28 Jun 2022 06:43:34 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Transfer-Encoding: chunked
 
 {
-    "snapshot_id": "MywxNzE1MjViNWNiYjg0NWZlNzU5MTQ1ZDEwODhlOWY3MjY5YjhmMDQ4"
+    "snapshot_id": "MyxhOWVhNGJiOWQ0YThhY2RkNjM0YTUxMjM5YjJjMzcyZjg5MjBlODlj"
 }
 Request method:	POST
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO/tracks123?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks123?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
 Proxy:			<none>
 Request params:	<none>
 Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy
@@ -5022,12 +5022,12 @@ access-control-max-age: 604800
 Content-Length: 0
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:15 GMT
+date: Tue, 28 Jun 2022 06:43:34 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Request method:	POST
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy123
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy123
 Proxy:			<none>
 Request params:	<none>
 Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy123
@@ -5050,7 +5050,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:15 GMT
+date: Tue, 28 Jun 2022 06:43:35 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5086,7 +5086,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:16 GMT
+date: Tue, 28 Jun 2022 06:43:35 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5122,7 +5122,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:16 GMT
+date: Tue, 28 Jun 2022 06:43:36 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5135,7 +5135,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	POST
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO/tracks?uris=
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks?uris=
 Proxy:			<none>
 Request params:	<none>
 Query params:	uris=
@@ -5158,7 +5158,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:16 GMT
+date: Tue, 28 Jun 2022 06:43:36 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5171,7 +5171,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	POST
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO/tracks?uris=
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks?uris=
 Proxy:			<none>
 Request params:	<none>
 Query params:	uris=
@@ -5194,7 +5194,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:16 GMT
+date: Tue, 28 Jun 2022 06:43:36 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5207,7 +5207,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	PUT
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -5234,7 +5234,7 @@ access-control-max-age: 604800
 Content-Length: 0
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:17 GMT
+date: Tue, 28 Jun 2022 06:43:37 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5267,7 +5267,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:19 GMT
+date: Tue, 28 Jun 2022 06:43:37 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5308,7 +5308,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:19 GMT
+date: Tue, 28 Jun 2022 06:43:38 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5321,7 +5321,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	PUT
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -5349,7 +5349,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:19 GMT
+date: Tue, 28 Jun 2022 06:43:38 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5362,7 +5362,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	PUT
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -5385,7 +5385,7 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:19 GMT
+date: Tue, 28 Jun 2022 06:43:39 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -5398,7 +5398,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	DELETE
-Request URI:	https://api.spotify.com/v1/playlists/3DTOyLNVYhADYGPPzRP2uO/tracks
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -5428,12 +5428,302 @@ access-control-max-age: 604800
 content-encoding: gzip
 strict-transport-security: max-age=31536000
 x-content-type-options: nosniff
-date: Tue, 28 Jun 2022 04:44:20 GMT
+date: Tue, 28 Jun 2022 06:43:39 GMT
 server: envoy
 Via: HTTP/2 edgeproxy, 1.1 google
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Transfer-Encoding: chunked
 
 {
-    "snapshot_id": "NyxlM2YyM2E2ZTdmYTMxNDA5ZDIxNzJjYzEyZGMxZjA2ZWUwZmQ3MWNm"
+    "snapshot_id": "Nyw0ZWYwODYwZWMyNmY1YTdjN2QyODhlZGFiMjJjM2FlMjU2ZWU0MzQ1"
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/2FohNt23E45MyKE8SuQv2CMH/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": "spotify:track:3RiPr603aXAoi4GHyXx0uy"
+        }
+    ]
+}
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Tue, 28 Jun 2022 06:43:40 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/%3Aplaylistid/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": "spotify:track:3RiPr603aXAoi4GHyXx0uy"
+        }
+    ]
+}
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Tue, 28 Jun 2022 06:43:40 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": "spotify:track:3RiPr603aXAoi4GHyXx0uy123"
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Tue, 28 Jun 2022 06:43:41 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "JSON body contains an invalid track uri: spotify:track:3RiPr603aXAoi4GHyXx0uy123"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": ""
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Tue, 28 Jun 2022 06:43:41 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "JSON body contains an invalid track uri: "
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Tue, 28 Jun 2022 06:43:41 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "JSON body contains a track without URI."
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Tue, 28 Jun 2022 06:43:41 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Missing tracks"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/0yeZH3mbuImPCM07v4LuQQ/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Tue, 28 Jun 2022 06:43:42 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Missing tracks"
+    }
 }
