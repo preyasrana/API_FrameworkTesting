@@ -117,5 +117,16 @@ public class TestDataBuild {
 	}
 	
 	
+	public String empty_attribute_change_playlist_detail() {
+		
+		
+		return "{\n"
+				+ "  \"name\": \"\",\n"
+				+ "  \"description\": \"\",\n"
+				+ "  \"public\": false\n"
+				+ "}";
+	}
+	
+	
 
 }

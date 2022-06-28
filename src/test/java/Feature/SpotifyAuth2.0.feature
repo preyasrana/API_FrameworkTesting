@@ -188,31 +188,28 @@ Feature: Verify SpotifyAuth2.0 Functionality
     Examples: 
       | message             | status_code |
       | Invalid playlist Id |         404 |
-      
-  
+
   @Regression
   Scenario Outline: Verify if blank trackid with add item to playlist api functionality
-    Given add blank trackid with itemtoplaylist    
-    When user are calling "post_additemstoplaylist" with "post" http request 
+    Given add blank trackid with itemtoplaylist
+    When user are calling "post_additemstoplaylist" with "post" http request
     Then user verify message is "<message>"
     Then user are verify invalid status code is "<status_code>"
 
     Examples: 
       | message             | status_code |
-      | Error parsing JSON. |         400 |  
-      
+      | Error parsing JSON. |         400 |
+
   @Regression
   Scenario Outline: Verify if without track uri with add item to playlist api functionality
-    Given add without track uri with itemtoplaylist    
-    When user are calling "post_additemstoplaylist" with "post" http request 
+    Given add without track uri with itemtoplaylist
+    When user are calling "post_additemstoplaylist" with "post" http request
     Then user verify message is "<message>"
     Then user are verify invalid status code is "<status_code>"
 
     Examples: 
       | message             | status_code |
-      | Error parsing JSON. |         400 | 
-      
-        
+      | Error parsing JSON. |         400 |
 
   #update playlist item related functionality
   @smoketest
@@ -220,7 +217,7 @@ Feature: Verify SpotifyAuth2.0 Functionality
     Given update itemtoplaylist
     When user are calling "put_changeplaylistdetail" with "put" http request
     Then user verify status code is 200
-    
+
   @Regression
   Scenario Outline: Verify Without Token Change_playlistdetail api functionality
     Given without auth update itemtoplaylist
@@ -230,9 +227,8 @@ Feature: Verify SpotifyAuth2.0 Functionality
 
     Examples: 
       | message           | status_code |
-      | No token provided |         401 |  
-      
-  
+      | No token provided |         401 |
+
   @Regression
   Scenario Outline: Verify Expire Token wise Change_playlistdetail api functionality
     Given without auth update itemtoplaylist
@@ -243,19 +239,69 @@ Feature: Verify SpotifyAuth2.0 Functionality
     Examples: 
       | message                  | status_code |
       | The access token expired |         401 |
-      
-      
-    
-    
-    
-    
+
+  @Regression
+  Scenario Outline: Verify Invalid playlist wise Change_playlistdetail api functionality
+    Given update itemtoplaylist
+    When user are calling with invaliddata "put_changeplaylistdetail" with "put" http request
+    Then user verify message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Invalid playlist Id |         404 |
+
+  @Regression
+  Scenario Outline: Verify if blank playlistid  wise Change_playlistdetail api functionality
+    Given update itemtoplaylist
+    When user are calling with blank id to "put_changeplaylistdetail" with "put" http request
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | status_code |
+      |         404 |
+
+  @Regression
+  Scenario Outline: Verify if missing requiredfield payload wise Change_playlistdetail api functionality
+    Given empty requiredfield payload to update itemtoplaylist
+    When user are calling "put_changeplaylistdetail" with "put" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message                 | status_code |
+      | Attribute name is empty |         400 |
+
+  @Regression
+  Scenario Outline: Verify if blank payload wise Change_playlistdetail api functionality
+    Given blank payload to add playlist
+    When user are calling "put_changeplaylistdetail" with "put" http request
+    Then user verify invalid message is "<message>"
+    Then user are verify invalid status code is "<status_code>"
+
+    Examples: 
+      | message             | status_code |
+      | Error parsing JSON. |         400 |
 
   #delete playlist item related functionality
-  #@smoketest
+  @smoketest
   Scenario: Verify if remove_playlistitem api functionality its working
     Given delete itemtoplaylist
     When user are calling "del_removeitemplaylist" with "delete" http request
     Then user verify status code is 200
+
+  @Regression
+  Scenario Outline: Verify Without Token remove_playlistitem api functionality
+    Given without auth remove playlistitem
+    When user are using without token "del_removeitemplaylist" with "delete" http request
+     Then user are verify invalid status code is "<status_code>"
+    Then user verify message is "<message>"
+
+    Examples: 
+      | message           | status_code |
+      | No token provided |         401 |
+    
+    
 
   #@Regression
   Scenario Outline: Verify if invalid trackid wise remove_playlistitem api functionality

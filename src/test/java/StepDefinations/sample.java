@@ -93,6 +93,16 @@ public class sample extends Utils {
 
 	}
 	
+	@Given("empty requiredfield payload to update itemtoplaylist")
+	public void empty_requiredfield_payload_to_update_itemtoplaylist() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(auth2_requestspecification()).body(testdata.empty_attribute_change_playlist_detail());
+
+	}
+	
+	
+	
+	
 	@Given("blank payload to add playlist")
 	public void blank_payload_to_add_playlist() throws FileNotFoundException, InterruptedException {
 
@@ -112,6 +122,14 @@ public class sample extends Utils {
 	public void without_auth_update_itemtoplaylist() throws FileNotFoundException, InterruptedException {
 
 		req = given().body(testdata.update_playlist());
+
+	}
+	
+	
+	@Given("without auth remove playlistitem")
+	public void without_auth_remove_playlistitem() throws FileNotFoundException, InterruptedException {
+
+		req = given().body(testdata.delete_playlist_item());
 
 	}
 	
@@ -205,7 +223,7 @@ public class sample extends Utils {
 			System.out.println(getresponse);
 		}
 		
-		if (method.equalsIgnoreCase("post")) {
+		else if (method.equalsIgnoreCase("post")) {
 			
 			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
 			System.out.println("Response is " + res);
@@ -216,7 +234,7 @@ public class sample extends Utils {
 			
 		}
 		
-		if (method.equalsIgnoreCase("put")) {
+		else if (method.equalsIgnoreCase("put")) {
 			
 			res = new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
 			System.out.println("Response is " + res);
@@ -225,6 +243,17 @@ public class sample extends Utils {
 			System.out.println(getresponse);
 	
 		}
+		else if(method.equalsIgnoreCase("delete")) {
+			
+			res = new ResponseSpecBuilder().build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().delete(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
+			
+		}
+		
+		
 		
 		
 	
@@ -360,6 +389,21 @@ public class sample extends Utils {
 				System.out.println(getresponse);
 
 			}
+		  else if (method.equalsIgnoreCase("put")) {
+
+				res = new ResponseSpecBuilder().build();
+				System.out.println("Response is " + res);
+
+				getresponse = req.when().put(strAPIResource).then().spec(res).extract().response();
+				System.out.println(getresponse);
+				
+		   }
+		  
+		  
+		  
+		  
+		  
+		  
 	    }
 	
 	
@@ -376,7 +420,7 @@ public class sample extends Utils {
 			System.out.println("Replaced userId in enum: " + strAPIResource);
 		} else if (strAPIResource.contains(":playlistid")) {
 			strAPIResource = strAPIResource.replace(":playlistid", ConfigReader.init_prop().getProperty("invalid_playlistid"));
-			System.out.println("Replaced userId in enum: " + strAPIResource);
+			System.out.println("Replaced playlistid in enum: " + strAPIResource);
 		}
 		
 		
@@ -393,6 +437,15 @@ public class sample extends Utils {
 			getresponse = req.when().post(strAPIResource).then().spec(res).extract().response();
 			System.out.println(getresponse);
 
+		}
+		
+		else if (method.equalsIgnoreCase("put")) {
+
+			res = new ResponseSpecBuilder().build();
+			System.out.println("Response is " + res);
+
+			getresponse = req.when().put(strAPIResource).then().spec(res).extract().response();
+			System.out.println(getresponse);
 		}
 		
 		
@@ -443,7 +496,7 @@ public class sample extends Utils {
 		}
 		else if(method.equalsIgnoreCase("put")) {
 			
-			res = new ResponseSpecBuilder().expectStatusCode(200).build();
+			res = new ResponseSpecBuilder().build();
 			System.out.println("Response is " + res);
 
 			getresponse = req.when().put(strAPIResource).then().spec(res).extract().response();
