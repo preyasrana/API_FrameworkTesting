@@ -87,17 +87,16 @@ public class Utils {
 	public static String auth2token() throws InterruptedException {
 		
 		
-		//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "/src/test/java/Download/chromedriver");
-		final ChromeOptions chromeOptions = new ChromeOptions();
+		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/src/test/java/Download/chromedriver");
+		//final ChromeOptions chromeOptions = new ChromeOptions();
 		// chromeOptions.setBinary("/usr/bin/google-chrome-stable");
 
 		// chromeOptions.setHeadless(true);
 
 		//chromeOptions.addArguments("prefs", {"profile.managed_default_content_settings.images": 2});
-		
+	/*	
 		chromeOptions.addArguments("--no-sandbox"); 
 		chromeOptions.addArguments("--disable-setuid-sandbox") ;
 
@@ -112,13 +111,14 @@ public class Utils {
 		chromeOptions.addArguments("--no-sandbox");
 		chromeOptions.addArguments("disable-infobars");		
 		chromeOptions.addArguments("start-maximized");
-		
+		*/
 		
 		// chromeOptions.addArguments("disable-infobars");
 		// chromeOptions.addArguments("user-data-dir=.\cookies\\test");
 
-		driver = new ChromeDriver(chromeOptions);
-		//driver.manage().window().maximize();
+		//driver = new ChromeDriver(chromeOptions);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		
 		driver.get("https://accounts.spotify.com/authorize?client_id=4e95ed2a5096419d92787be74f2e0e8c&response_type=code\n"
 				+ "&scope=playlist-modify-public playlist-read-private playlist-modify-private&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback");
