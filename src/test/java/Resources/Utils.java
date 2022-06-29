@@ -7,6 +7,7 @@ import java.io.PrintStream;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import static io.restassured.RestAssured.*;
 
@@ -87,8 +88,24 @@ public class Utils {
 		
 		
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		
+		final ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.setBinary("/usr/bin/google-chrome-stable");
+
+		// chromeOptions.setHeadless(true);
+
+		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--single-process", "--no-sandbox", "--disable-dev-shm-usage");
+		//driver = new ChromeDriver();
+		chromeOptions.addArguments("--disable-dev-shm-using");
+		// chromeOptions.addArguments("--disable-extensions");
+		chromeOptions.addArguments("--disable-gpu");
+		chromeOptions.addArguments("start-maximized");
+		// chromeOptions.addArguments("disable-infobars");
+		// chromeOptions.addArguments("user-data-dir=.\cookies\\test");
+
+		driver = new ChromeDriver(chromeOptions);
+		//driver.manage().window().maximize();
 		
 		driver.get("https://accounts.spotify.com/authorize?client_id=4e95ed2a5096419d92787be74f2e0e8c&response_type=code\n"
 				+ "&scope=playlist-modify-public playlist-read-private playlist-modify-private&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback");
