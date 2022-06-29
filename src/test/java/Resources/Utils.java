@@ -96,7 +96,14 @@ public class Utils {
 
 		// chromeOptions.setHeadless(true);
 
+		//chromeOptions.addArguments("prefs", {"profile.managed_default_content_settings.images": 2});
+		
+		chromeOptions.addArguments("--no-sandbox"); 
+		chromeOptions.addArguments("--disable-setuid-sandbox") ;
+
+		chromeOptions.addArguments("--remote-debugging-port=8080") ; //# this
 		chromeOptions.addArguments("--headless");
+		
 		chromeOptions.addArguments("--single-process", "--no-sandbox", "--disable-dev-shm-usage");
 		//driver = new ChromeDriver();
 		chromeOptions.addArguments("--disable-dev-shm-using");
