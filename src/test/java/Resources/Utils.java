@@ -87,8 +87,10 @@ public class Utils {
 	public static String auth2token() throws InterruptedException {
 		
 		
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		
+		System.setProperty("webdriver.chrome.driver",
+				System.getProperty("user.dir") + "/src/test/java/Download/chromedriver");
 		final ChromeOptions chromeOptions = new ChromeOptions();
 		// chromeOptions.setBinary("/usr/bin/google-chrome-stable");
 
@@ -99,8 +101,12 @@ public class Utils {
 		//driver = new ChromeDriver();
 		chromeOptions.addArguments("--disable-dev-shm-using");
 		// chromeOptions.addArguments("--disable-extensions");
-		chromeOptions.addArguments("--disable-gpu");
+		chromeOptions.addArguments("--disable-dev-shm-usage");
+		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.addArguments("disable-infobars");		
 		chromeOptions.addArguments("start-maximized");
+		
+		
 		// chromeOptions.addArguments("disable-infobars");
 		// chromeOptions.addArguments("user-data-dir=.\cookies\\test");
 
