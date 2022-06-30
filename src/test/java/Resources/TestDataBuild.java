@@ -3,14 +3,19 @@ package Resources;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.github.javafaker.Faker;
+
 import POJO.Addplace;
 import POJO.CreateUser;
 import POJO.location;
+
+
 
 public class TestDataBuild {
 
 	Addplace addplc = new Addplace();
 	location loc = new location();
+	public Faker faker = new Faker();
 
 	CreateUser user = new CreateUser();
 
@@ -46,6 +51,14 @@ public class TestDataBuild {
 		return addplc;
 
 	}
+	
+	
+	public String faker_getname() {
+		return faker.name().fullName();
+	}
+	
+	
+	
 
 	public String deleteplacepayload(String placeid) {
 		return "{\n" + "    \"place_id\":\"" + placeid + "\"\n" + "}";
@@ -59,7 +72,15 @@ public class TestDataBuild {
 	public String create_user() {
 		
 		return "{\n"
-				+ "    \"userName\": \""+ConfigReader.init_prop().getProperty("Username")+"\",\n"
+				+ "    \"userName\": \""+faker_getname()+"\",\n"
+				+ "    \"password\": \""+ConfigReader.init_prop().getProperty("Password")+"\"\n"
+				+ "}";
+	}
+	
+	public String new_user_create(String username) {
+		
+		return "{\n"
+				+ "    \"userName\": \""+username+"\",\n"
 				+ "    \"password\": \""+ConfigReader.init_prop().getProperty("Password")+"\"\n"
 				+ "}";
 	}

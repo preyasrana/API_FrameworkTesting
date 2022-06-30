@@ -8,7 +8,7 @@ Feature: Verify Basic Auth & Bearer Token Functionality
 
     Examples: 
       | USRNAME                | PASSWORD      |
-      | Testing_new_user_10010 | Test10@Preyas |
+      | Testing_new_user_10014 | Test10@Preyas |
 
   @smoketest
   Scenario: Verify if Getbookstore api functionality its working
@@ -17,7 +17,7 @@ Feature: Verify Basic Auth & Bearer Token Functionality
     
   @smoketest
   Scenario: Verify Create token functionality its working 
-     Given add user with username and password
+     Given add user with username and password to create account
      When userare call "generate_token" with "post" http request
 
   @smoketest

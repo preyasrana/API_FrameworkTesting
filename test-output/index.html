@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">38 methods,   38 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Create user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">runScenario("Verify Create user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify AssignBook to user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,192 +123,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if without track uri with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Fu...)">runScenario("Verify if without track uri with add item to playlist api functionality", "Verify SpotifyAuth2.0 Fu...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Create token functionality its working&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">runScenario("Verify Create token functionality its working", "Verify Basic Auth & Bearer Token Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if missing requiredfield payload wise Change_playlistdetail api functionality&quot;, &quot;Verify Spot...)">runScenario("Verify if missing requiredfield payload wise Change_playlistdetail api functionality", "Verify Spot...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if invalid trackid wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Funct...)">runScenario("Verify if invalid trackid wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Funct...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Without Token add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify Without Token add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if missing track payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0...)">runScenario("Verify if missing track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Without Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank playlistid with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Fun...)">runScenario("Verify if blank playlistid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Fun...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Without Token Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality...)">runScenario("Verify Without Token Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if invalid trackid with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Func...)">runScenario("Verify if invalid trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Func...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank playlistid  wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 F...)">runScenario("Verify if blank playlistid  wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 F...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Expire Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if Change_playlistdetail api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionalit...)">runScenario("Verify if Change_playlistdetail api functionality its working", "Verify SpotifyAuth2.0 Functionalit...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Invalid playlist wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Funct...)">runScenario("Verify Invalid playlist wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Funct...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Invalid playlist wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functio...)">runScenario("Verify Invalid playlist wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functio...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Without Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Expire Token wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functiona...)">runScenario("Verify Expire Token wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functiona...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Without Token remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify Without Token remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if invalid playlist id with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 ...)">runScenario("Verify if invalid playlist id with add item to playlist api functionality", "Verify SpotifyAuth2.0 ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if without URI payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 F...)">runScenario("Verify if without URI payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 F...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify invalid url wise create playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionalit...)">runScenario("Verify invalid url wise create playlistitem api functionality", "Verify SpotifyAuth2.0 Functionalit...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if Additemto_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify if Additemto_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank trackid with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functi...)">runScenario("Verify if blank trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functi...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank playlistid  wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Fun...)">runScenario("Verify if blank playlistid  wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Fun...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank payload with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0...)">runScenario("Verify if blank payload with Create_playlist api functionality its working", "Verify SpotifyAuth2.0...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if wrong url with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functional...)">runScenario("Verify if wrong url with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functional...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify if Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if missing requiredfield payload with Create_playlist api functionality its working&quot;, &quot;Verif...)">runScenario("Verify if missing requiredfield payload with Create_playlist api functionality its working", "Verif...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank Userid with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 ...)">runScenario("Verify if blank Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Expire Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if remove_playlistitem api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify if remove_playlistitem api functionality its working", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Expire Token wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionali...)">runScenario("Verify Expire Token wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionali...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Expire Token wise add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functional...)">runScenario("Verify Expire Token wise add item to playlist api functionality", "Verify SpotifyAuth2.0 Functional...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if Get_newreleases api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">runScenario("Verify if Get_newreleases api functionality its working", "Verify SpotifyAuth2.0 Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if invalid Userid with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2....)">runScenario("Verify if invalid Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2....)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank payload wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Funct...)">runScenario("Verify if blank payload wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Funct...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if wrong url with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Fun...)">runScenario("Verify if wrong url with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Fun...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if empty requiredfield payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyA...)">runScenario("Verify if empty requiredfield payload wise remove_playlistitem api functionality", "Verify SpotifyA...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if blank track payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 F...)">runScenario("Verify if blank track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 F...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if Getbookstore api functionality its working&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functional...)">runScenario("Verify if Getbookstore api functionality its working", "Verify Basic Auth & Bearer Token Functional...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -304,6 +143,144 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Create user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Create user API Successfully", "Verify Basic Auth & Bearer Token Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Create user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Resources.Utils.getjsonpath(Utils.java:165)
+	at StepDefinations.sample.getBooksapi(sample.java:670)
+	at ✽.user are call &quot;postcreateuserapi&quot; with &quot;post&quot; http request(file:///home/preyas.r@ah.zymrinc.com/Desktop/preyas/Eclipse-NEw-Workspace/API_FrameworkTesting/src/test/java/Feature/BasicAuth_Bearer.feature:7)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify AssignBook to user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">
+                  </a> <!-- runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot invoke method getAt() on null object
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:286)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at Resources.Utils.getjsonpath(Utils.java:165)
+	at StepDefinations.sample.Booksapi(sample.java:718)
+	at ✽.user shouldbe call &quot;post_Assign_book_user&quot; with &quot;post&quot; http request(file:///home/preyas.r@ah.zymrinc.com/Desktop/preyas/Eclipse-NEw-Workspace/API_FrameworkTesting/src/test/java/Feature/BasicAuth_Bearer.feature:26)
+Caused by: java.lang.NullPointerException: Cannot invoke method getAt() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:44)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at Script1.run(Script1.groovy:1)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:427)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:461)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:436)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at Resources.Utils.getjsonpath(Utils.java:165)
+	at StepDefinations.sample.Booksapi(sample.java:718)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -312,380 +289,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify if without track uri with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Fu...)">
-                  </a> <!-- runScenario("Verify if without track uri with add item to playlist api functionality", "Verify SpotifyAuth2.0 Fu...) -->
+                  <a name="runScenario(&quot;Verify Create token functionality its working&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Create token functionality its working", "Verify Basic Auth & Bearer Token Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if without track uri with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
+                  <span class="parameters">("Verify Create token functionality its working", "Verify Basic Auth & Bearer Token Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify if missing requiredfield payload wise Change_playlistdetail api functionality&quot;, &quot;Verify Spot...)">
-                  </a> <!-- runScenario("Verify if missing requiredfield payload wise Change_playlistdetail api functionality", "Verify Spot...) -->
+                  <a name="runScenario(&quot;Verify if Getbookstore api functionality its working&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functional...)">
+                  </a> <!-- runScenario("Verify if Getbookstore api functionality its working", "Verify Basic Auth & Bearer Token Functional...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if missing requiredfield payload wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if invalid trackid wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Funct...)">
-                  </a> <!-- runScenario("Verify if invalid trackid wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Funct...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if invalid trackid wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Without Token add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify Without Token add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Without Token add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if missing track payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0...)">
-                  </a> <!-- runScenario("Verify if missing track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if missing track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Without Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank playlistid with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Fun...)">
-                  </a> <!-- runScenario("Verify if blank playlistid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Fun...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank playlistid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Without Token Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality...)">
-                  </a> <!-- runScenario("Verify Without Token Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Without Token Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if invalid trackid with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Func...)">
-                  </a> <!-- runScenario("Verify if invalid trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Func...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if invalid trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank playlistid  wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 F...)">
-                  </a> <!-- runScenario("Verify if blank playlistid  wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 F...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank playlistid  wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Expire Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if Change_playlistdetail api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionalit...)">
-                  </a> <!-- runScenario("Verify if Change_playlistdetail api functionality its working", "Verify SpotifyAuth2.0 Functionalit...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if Change_playlistdetail api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Invalid playlist wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Funct...)">
-                  </a> <!-- runScenario("Verify Invalid playlist wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Funct...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Invalid playlist wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Invalid playlist wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functio...)">
-                  </a> <!-- runScenario("Verify Invalid playlist wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functio...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Invalid playlist wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Without Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Expire Token wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functiona...)">
-                  </a> <!-- runScenario("Verify Expire Token wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functiona...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Expire Token wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Without Token remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify Without Token remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Without Token remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if invalid playlist id with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 ...)">
-                  </a> <!-- runScenario("Verify if invalid playlist id with add item to playlist api functionality", "Verify SpotifyAuth2.0 ...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if invalid playlist id with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if without URI payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 F...)">
-                  </a> <!-- runScenario("Verify if without URI payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 F...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if without URI payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify invalid url wise create playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionalit...)">
-                  </a> <!-- runScenario("Verify invalid url wise create playlistitem api functionality", "Verify SpotifyAuth2.0 Functionalit...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify invalid url wise create playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if Additemto_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify if Additemto_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if Additemto_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank trackid with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functi...)">
-                  </a> <!-- runScenario("Verify if blank trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functi...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank playlistid  wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Fun...)">
-                  </a> <!-- runScenario("Verify if blank playlistid  wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Fun...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank playlistid  wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank payload with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0...)">
-                  </a> <!-- runScenario("Verify if blank payload with Create_playlist api functionality its working", "Verify SpotifyAuth2.0...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank payload with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if wrong url with add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functional...)">
-                  </a> <!-- runScenario("Verify if wrong url with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functional...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if wrong url with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify if Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if missing requiredfield payload with Create_playlist api functionality its working&quot;, &quot;Verif...)">
-                  </a> <!-- runScenario("Verify if missing requiredfield payload with Create_playlist api functionality its working", "Verif...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if missing requiredfield payload with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank Userid with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 ...)">
-                  </a> <!-- runScenario("Verify if blank Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 ...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Expire Token playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if remove_playlistitem api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify if remove_playlistitem api functionality its working", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if remove_playlistitem api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Expire Token wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functionali...)">
-                  </a> <!-- runScenario("Verify Expire Token wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionali...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Expire Token wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify Expire Token wise add item to playlist api functionality&quot;, &quot;Verify SpotifyAuth2.0 Functional...)">
-                  </a> <!-- runScenario("Verify Expire Token wise add item to playlist api functionality", "Verify SpotifyAuth2.0 Functional...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Expire Token wise add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if Get_newreleases api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Functionality&quot;)">
-                  </a> <!-- runScenario("Verify if Get_newreleases api functionality its working", "Verify SpotifyAuth2.0 Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if Get_newreleases api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if invalid Userid with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2....)">
-                  </a> <!-- runScenario("Verify if invalid Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2....) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if invalid Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank payload wise Change_playlistdetail api functionality&quot;, &quot;Verify SpotifyAuth2.0 Funct...)">
-                  </a> <!-- runScenario("Verify if blank payload wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Funct...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank payload wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if wrong url with Create_playlist api functionality its working&quot;, &quot;Verify SpotifyAuth2.0 Fun...)">
-                  </a> <!-- runScenario("Verify if wrong url with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Fun...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if wrong url with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if empty requiredfield payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyA...)">
-                  </a> <!-- runScenario("Verify if empty requiredfield payload wise remove_playlistitem api functionality", "Verify SpotifyA...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if empty requiredfield payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify if blank track payload wise remove_playlistitem api functionality&quot;, &quot;Verify SpotifyAuth2.0 F...)">
-                  </a> <!-- runScenario("Verify if blank track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 F...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify if blank track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
+                  <span class="parameters">("Verify if Getbookstore api functionality its working", "Verify Basic Auth & Bearer Token Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -695,7 +312,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--1166293567/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-593529526/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -752,164 +369,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(38);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runners.TestRunner')
-data.setCell(0, 3, 14224);
+data.setCell(0, 3, 2983);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Runners.TestRunner')
-data.setCell(1, 3, 456);
+data.setCell(1, 3, 804);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'Runners.TestRunner')
-data.setCell(2, 3, 408);
+data.setCell(2, 3, 773);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'Runners.TestRunner')
-data.setCell(3, 3, 408);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'Runners.TestRunner')
-data.setCell(4, 3, 406);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'Runners.TestRunner')
-data.setCell(5, 3, 404);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'runScenario')
-data.setCell(6, 2, 'Runners.TestRunner')
-data.setCell(6, 3, 404);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'runScenario')
-data.setCell(7, 2, 'Runners.TestRunner')
-data.setCell(7, 3, 404);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'runScenario')
-data.setCell(8, 2, 'Runners.TestRunner')
-data.setCell(8, 3, 398);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'runScenario')
-data.setCell(9, 2, 'Runners.TestRunner')
-data.setCell(9, 3, 382);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'runScenario')
-data.setCell(10, 2, 'Runners.TestRunner')
-data.setCell(10, 3, 369);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'runScenario')
-data.setCell(11, 2, 'Runners.TestRunner')
-data.setCell(11, 3, 366);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'runScenario')
-data.setCell(12, 2, 'Runners.TestRunner')
-data.setCell(12, 3, 348);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'runScenario')
-data.setCell(13, 2, 'Runners.TestRunner')
-data.setCell(13, 3, 346);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'runScenario')
-data.setCell(14, 2, 'Runners.TestRunner')
-data.setCell(14, 3, 338);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'runScenario')
-data.setCell(15, 2, 'Runners.TestRunner')
-data.setCell(15, 3, 311);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'runScenario')
-data.setCell(16, 2, 'Runners.TestRunner')
-data.setCell(16, 3, 308);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'runScenario')
-data.setCell(17, 2, 'Runners.TestRunner')
-data.setCell(17, 3, 304);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'runScenario')
-data.setCell(18, 2, 'Runners.TestRunner')
-data.setCell(18, 3, 304);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'runScenario')
-data.setCell(19, 2, 'Runners.TestRunner')
-data.setCell(19, 3, 302);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'runScenario')
-data.setCell(20, 2, 'Runners.TestRunner')
-data.setCell(20, 3, 301);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'runScenario')
-data.setCell(21, 2, 'Runners.TestRunner')
-data.setCell(21, 3, 299);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'runScenario')
-data.setCell(22, 2, 'Runners.TestRunner')
-data.setCell(22, 3, 298);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'runScenario')
-data.setCell(23, 2, 'Runners.TestRunner')
-data.setCell(23, 3, 290);
-data.setCell(24, 0, 24)
-data.setCell(24, 1, 'runScenario')
-data.setCell(24, 2, 'Runners.TestRunner')
-data.setCell(24, 3, 288);
-data.setCell(25, 0, 25)
-data.setCell(25, 1, 'runScenario')
-data.setCell(25, 2, 'Runners.TestRunner')
-data.setCell(25, 3, 281);
-data.setCell(26, 0, 26)
-data.setCell(26, 1, 'runScenario')
-data.setCell(26, 2, 'Runners.TestRunner')
-data.setCell(26, 3, 271);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'runScenario')
-data.setCell(27, 2, 'Runners.TestRunner')
-data.setCell(27, 3, 262);
-data.setCell(28, 0, 28)
-data.setCell(28, 1, 'runScenario')
-data.setCell(28, 2, 'Runners.TestRunner')
-data.setCell(28, 3, 248);
-data.setCell(29, 0, 29)
-data.setCell(29, 1, 'runScenario')
-data.setCell(29, 2, 'Runners.TestRunner')
-data.setCell(29, 3, 245);
-data.setCell(30, 0, 30)
-data.setCell(30, 1, 'runScenario')
-data.setCell(30, 2, 'Runners.TestRunner')
-data.setCell(30, 3, 239);
-data.setCell(31, 0, 31)
-data.setCell(31, 1, 'runScenario')
-data.setCell(31, 2, 'Runners.TestRunner')
-data.setCell(31, 3, 235);
-data.setCell(32, 0, 32)
-data.setCell(32, 1, 'runScenario')
-data.setCell(32, 2, 'Runners.TestRunner')
-data.setCell(32, 3, 225);
-data.setCell(33, 0, 33)
-data.setCell(33, 1, 'runScenario')
-data.setCell(33, 2, 'Runners.TestRunner')
-data.setCell(33, 3, 220);
-data.setCell(34, 0, 34)
-data.setCell(34, 1, 'runScenario')
-data.setCell(34, 2, 'Runners.TestRunner')
-data.setCell(34, 3, 212);
-data.setCell(35, 0, 35)
-data.setCell(35, 1, 'runScenario')
-data.setCell(35, 2, 'Runners.TestRunner')
-data.setCell(35, 3, 211);
-data.setCell(36, 0, 36)
-data.setCell(36, 1, 'runScenario')
-data.setCell(36, 2, 'Runners.TestRunner')
-data.setCell(36, 3, 201);
-data.setCell(37, 0, 37)
-data.setCell(37, 1, 'runScenario')
-data.setCell(37, 2, 'Runners.TestRunner')
-data.setCell(37, 3, 189);
+data.setCell(3, 3, 742);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -937,164 +418,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@67c2ff5d)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@29b4444a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify if Get_newreleases api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">978 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Create user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
+                <span class="method-start">817 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">15203 ms</span>
+                <span class="method-name">runScenario("Verify if Getbookstore api functionality its working", "Verify Basic Auth & Bearer Token Functional...)</span>
+                <span class="method-start">3803 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">15589 ms</span>
+                <span class="method-name">runScenario("Verify Create token functionality its working", "Verify Basic Auth & Bearer Token Functionality")</span>
+                <span class="method-start">4608 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify invalid url wise create playlistitem api functionality", "Verify SpotifyAuth2.0 Functionalit...)</span>
-                <span class="method-start">15938 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">16186 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Without Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">16643 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Expire Token playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">16881 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if missing requiredfield payload with Create_playlist api functionality its working", "Verif...)</span>
-                <span class="method-start">17157 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank payload with Create_playlist api functionality its working", "Verify SpotifyAuth2.0...)</span>
-                <span class="method-start">17565 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if wrong url with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 Fun...)</span>
-                <span class="method-start">17972 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if invalid Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2....)</span>
-                <span class="method-start">18384 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank Userid with Create_playlist api functionality its working", "Verify SpotifyAuth2.0 ...)</span>
-                <span class="method-start">18791 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if Additemto_playlist api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">19159 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Without Token add item to playlist api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">19570 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Expire Token wise add item to playlist api functionality", "Verify SpotifyAuth2.0 Functional...)</span>
-                <span class="method-start">19921 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if wrong url with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functional...)</span>
-                <span class="method-start">20206 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if invalid trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Func...)</span>
-                <span class="method-start">20452 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if invalid playlist id with add item to playlist api functionality", "Verify SpotifyAuth2.0 ...)</span>
-                <span class="method-start">20741 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank playlistid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Fun...)</span>
-                <span class="method-start">21004 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank trackid with add item to playlist api functionality", "Verify SpotifyAuth2.0 Functi...)</span>
-                <span class="method-start">21343 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if without track uri with add item to playlist api functionality", "Verify SpotifyAuth2.0 Fu...)</span>
-                <span class="method-start">21645 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if Change_playlistdetail api functionality its working", "Verify SpotifyAuth2.0 Functionalit...)</span>
-                <span class="method-start">21959 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Without Token Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functionality...)</span>
-                <span class="method-start">22329 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Expire Token wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Functiona...)</span>
-                <span class="method-start">22518 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Invalid playlist wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Funct...)</span>
-                <span class="method-start">22731 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank playlistid  wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 F...)</span>
-                <span class="method-start">22971 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if missing requiredfield payload wise Change_playlistdetail api functionality", "Verify Spot...)</span>
-                <span class="method-start">23172 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank payload wise Change_playlistdetail api functionality", "Verify SpotifyAuth2.0 Funct...)</span>
-                <span class="method-start">23577 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if remove_playlistitem api functionality its working", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">23881 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Without Token remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionality")</span>
-                <span class="method-start">24282 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Expire Token wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functionali...)</span>
-                <span class="method-start">24508 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify Invalid playlist wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Functio...)</span>
-                <span class="method-start">24813 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank playlistid  wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Fun...)</span>
-                <span class="method-start">25120 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if invalid trackid wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 Funct...)</span>
-                <span class="method-start">25421 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if empty requiredfield payload wise remove_playlistitem api functionality", "Verify SpotifyA...)</span>
-                <span class="method-start">25720 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if without URI payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 F...)</span>
-                <span class="method-start">25933 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if missing track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0...)</span>
-                <span class="method-start">26242 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify if blank track payload wise remove_playlistitem api functionality", "Verify SpotifyAuth2.0 F...)</span>
-                <span class="method-start">26462 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
+                <span class="method-start">5385 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">26754 ms</span>
+                <span class="method-start">6130 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

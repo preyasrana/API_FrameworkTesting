@@ -38,6 +38,7 @@ public class sample extends Utils {
 	static String spotify_uri;
 	static String playlistid;
 	static String invalidjson_response;
+	static String username;
 	
 	static String oauthtoken = "Bearer BQCUB3ATFT_ADa7iLIzdb3kkR4Yj5-d2qpuOqCCa-WSWxPcEn56T-XghwbXLK2QEBUBtx91-dzGuCEOUOafGO9WWaCvfU79A36-leTdox9ct68-SFNoXmZrW3AdasXd26mMir-LV40FOquINNmSHLYg1Q-EVI5cit0cpxJayqxwFoJuwYh-UwqW27KaoYYyLmUJ647nsQbyOH7kERBM";
 
@@ -60,6 +61,14 @@ public class sample extends Utils {
 	public void add_user_payload() throws FileNotFoundException {
 
 		req = given().spec(basicauth_requestspecification()).body(testdata.create_user());
+
+	}
+	
+	
+	@Given("add user with username and password to create account")
+	public void add_user_payload_create_account() throws FileNotFoundException {
+
+		req = given().spec(basicauth_requestspecification()).body(testdata.new_user_create(username));
 
 	}
 
@@ -669,6 +678,9 @@ public class sample extends Utils {
 
 			userID = getjsonpath(getresponse, "userID");
 			System.out.println("userID is -->" + userID);
+			
+			username = getjsonpath(getresponse, "username");
+			System.out.println("username is -->" + username);
 
 		}
 
