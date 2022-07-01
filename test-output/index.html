@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify AssignBook to user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,6 +117,11 @@
                         <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if Getbookstore api functionality its working&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functional...)">runScenario("Verify if Getbookstore api functionality its working", "Verify Basic Auth & Bearer Token Functional...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify AssignBook to user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -143,35 +134,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Runners.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify AssignBook to user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">
-                  </a> <!-- runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [401] but found [201]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at StepDefinations.sample.user_are_verify_invalid_status_code_is(sample.java:597)
-	at ✽.user are verify invalid status code is &quot;401&quot;(file:///home/preyas.r@ah.zymrinc.com/Desktop/preyas/Eclipse-NEw-Workspace/API_FrameworkTesting/src/test/java/Feature/BasicAuth_Bearer.feature:27)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -208,12 +170,22 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify AssignBook to user API Successfully&quot;, &quot;Verify Basic Auth &amp; Bearer Token Functionality&quot;)">
+                  </a> <!-- runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--365691404/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--152231862/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -274,19 +246,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runners.TestRunner')
-data.setCell(0, 3, 3293);
+data.setCell(0, 3, 3324);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Runners.TestRunner')
-data.setCell(1, 3, 841);
+data.setCell(1, 3, 739);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'Runners.TestRunner')
-data.setCell(2, 3, 777);
+data.setCell(2, 3, 723);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'Runners.TestRunner')
-data.setCell(3, 3, 740);
+data.setCell(3, 3, 701);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -319,30 +291,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@5bbf3869)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@642b71d6)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify Create user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
-                <span class="method-start">844 ms</span>
+                <span class="method-start">797 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify if Getbookstore api functionality its working", "Verify Basic Auth & Bearer Token Functional...)</span>
-                <span class="method-start">4139 ms</span>
+                <span class="method-start">4123 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify Create token functionality its working", "Verify Basic Auth & Bearer Token Functionality")</span>
-                <span class="method-start">4981 ms</span>
+                <span class="method-start">4847 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Verify AssignBook to user API Successfully", "Verify Basic Auth & Bearer Token Functionality")</span>
-                <span class="method-start">5725 ms</span>
+                <span class="method-start">5552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">6505 ms</span>
+                <span class="method-start">6294 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
