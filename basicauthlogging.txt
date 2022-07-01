@@ -11,21 +11,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "userName": "Owen Mraz Sr.",
+    "userName": "Orval Steuber",
     "password": "Test10@Preyas"
 }
 HTTP/1.1 201 Created
 Server: nginx/1.17.10 (Ubuntu)
-Date: Fri, 01 Jul 2022 06:04:05 GMT
+Date: Fri, 01 Jul 2022 06:45:02 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 87
 Connection: keep-alive
 X-Powered-By: Express
-ETag: W/"57-HKxirsS8I30jFpvgZbMJ9C7UWr0"
+ETag: W/"57-ygsAOIbRU3sFV3eiK6O9wipG+OA"
 
 {
-    "userID": "acfa10a9-9461-4376-b268-d260036b9e08",
-    "username": "Owen Mraz Sr.",
+    "userID": "0b83df7d-558d-4420-b63c-1e6e60540b7c",
+    "username": "Orval Steuber",
     "books": [
         
     ]
@@ -44,7 +44,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx/1.17.10 (Ubuntu)
-Date: Fri, 01 Jul 2022 06:04:06 GMT
+Date: Fri, 01 Jul 2022 06:45:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 4514
 Connection: keep-alive
@@ -156,21 +156,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "userName": "Owen Mraz Sr.",
+    "userName": "Orval Steuber",
     "password": "Test10@Preyas"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.17.10 (Ubuntu)
-Date: Fri, 01 Jul 2022 06:04:07 GMT
+Date: Fri, 01 Jul 2022 06:45:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 286
 Connection: keep-alive
 X-Powered-By: Express
-ETag: W/"11e-InuBhQ/kGt3kztgGuPaEguW7xYc"
+ETag: W/"11e-1di7Uu43XYU5KHwO8msgC9qzz/Y"
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ik93ZW4gTXJheiBTci4iLCJwYXNzd29yZCI6IlRlc3QxMEBQcmV5YXMiLCJpYXQiOjE2NTY2NTU0NDd9.YnBNhEwcSoH_HwWsFw3HksczDjGPaM5UljtYUInHXOk",
-    "expires": "2022-07-08T06:04:07.363Z",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ik9ydmFsIFN0ZXViZXIiLCJwYXNzd29yZCI6IlRlc3QxMEBQcmV5YXMiLCJpYXQiOjE2NTY2NTc5MDR9.PNBpLW_DMnSnTNIo0MWOC8oI0iOOfyW2gvHROyzrxzQ",
+    "expires": "2022-07-08T06:45:04.731Z",
     "status": "Success",
     "result": "User authorized successfully."
 }
@@ -181,14 +181,14 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ik93ZW4gTXJheiBTci4iLCJwYXNzd29yZCI6IlRlc3QxMEBQcmV5YXMiLCJpYXQiOjE2NTY2NTU0NDd9.YnBNhEwcSoH_HwWsFw3HksczDjGPaM5UljtYUInHXOk
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ik9ydmFsIFN0ZXViZXIiLCJwYXNzd29yZCI6IlRlc3QxMEBQcmV5YXMiLCJpYXQiOjE2NTY2NTc5MDR9.PNBpLW_DMnSnTNIo0MWOC8oI0iOOfyW2gvHROyzrxzQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "userId": "acfa10a9-9461-4376-b268-d260036b9e08",
+    "userId": "0b83df7d-558d-4420-b63c-1e6e60540b7c",
     "collectionOfIsbns": [
         {
             "isbn": "9781593277574"
@@ -197,7 +197,7 @@ Body:
 }
 HTTP/1.1 201 Created
 Server: nginx/1.17.10 (Ubuntu)
-Date: Fri, 01 Jul 2022 06:04:08 GMT
+Date: Fri, 01 Jul 2022 06:45:05 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
