@@ -35,7 +35,6 @@ public enum APIsList {
 	
 	
 	
-
 	private String resource;
 
 	APIsList(String resource) {
