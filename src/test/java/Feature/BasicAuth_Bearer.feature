@@ -24,8 +24,4 @@ Feature: Verify Basic Auth & Bearer Token Functionality
   Scenario Outline: Verify AssignBook to user API Successfully
     Given assignbooktoUSer
     When user shouldbe call "post_Assign_book_user" with "post" http request
-    Then user are verify invalid status code is "<status_code>"
-
-    Examples: 
-      | status_code |
-      |         401 |
+    
