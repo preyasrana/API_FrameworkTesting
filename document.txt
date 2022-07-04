@@ -1,0 +1,215 @@
+﻿
+run through command line 
+mvn test  
+
+mvn test -DCucumberOptions="--tags @smoketest"
+
+mvn test verify
+			
+===========================
+
+Docker Command :
+
+sudo apt-get update
+
+sudo apt-get upgrade docker-ce
+
+docker –version
+
+docker info
+
+sudo service docker start
+
+sudo chmod 666 /var/run/docker.sock
+
+amazon EC2 instance 
+
+sudo usermod -a -G docker ec2-user
+
+docker images
+
+running containers    --> docker ps
+
+
+docker ps -a
+
+docker run imagename
+
+
+How to docker stop 
+sudo service docker stop
+
+docker -v  >> version of docker 
+
+docker –help
+
+docker login 
+
+docker pull ubuntu
+
+docker images -a
+
+docker images -q
+
+Remove your docker images 
+docker rmi
+
+docker rmi imageid 
+
+docker start containerid 
+
+docker stop containerid 
+
+
+docker stats
+
+docker system df   > Docker elements allocated size , spaces 
+
+docker system prune
+
+
+docker run --name Myubuntu -it ubuntu bash
+
+docker inspect ubuntu (image name)
+
+
+docker rmi -f ubuntu:latest
+(-f its forcefully stopped & image name with their tag)
+
+===================================
+
+what are container : container is running instance of images 
+
+docker run ubuntu:tagname
+
+docker pause containername
+
+
+docker top myubuntu1 (container name)
+
+docker attached 
+
+=====================================
+
+docker pull jenkins/jenkins
+
+docker run -p 8080:8080 --name=jenkins-master -d jenkins/jenkins
+
+Flush changes: $ sudo systemctl daemon-reload
+Restart Docker: $ sudo systemctl restart docker
+
+docker exec -it 2a42f0ddd31a bash
+
+cat path paste  (/var/jenkins_home/secrets/initialAdminPassword)
+
+
+
+=====================
+
+docker volume 
+
+docker volume create container name 
+
+docker volume ls 
+
+docker volume inspect {volumename}
+
+docker inspect  {containername}
+
+mount data 
+
+==========================
+
+1)  create a filename for docker file
+
+2)  vim dockerfile
+
+3)  press i to insert
+
+4)  # getting bash image ubuntu
+FROM ubuntu
+
+MAINTAINER Preyas rana
+ 
+Run apt-get update
+ 
+CMD["echo","first docker image"]
+
+
+5) esc
+
+6) :wq!
+
+7) view docker image
+cat dockername 
+
+8)  docker build -t myimage1:1.0 .
+
+docker build -t java-app . 
+
+
+
+
+
+
+
+
+
+
+Company sys:
+
+JDK Installation 
+JAVA_HOME
+/usr/lib/jvm/java-8-oracle
+
+Maven Home 
+name :: Maven home
+/usr/share/maven
+
+install maven in docker container 
+
+docker exec -it 2f17ae6b9930 bash
+
+===============================
+
+git config user.name "new name"
+
+
+git config credential.username "new name"
+
+
+
+
+=====================================
+
+Cookie based auth ::
+
+preyasnew1@rediffmail.com
+
+psRANA@12345
+
+======================
+
+
+
+#new
+
+#old data 
+
+#extent.reporter.spark.start=true
+#extent.reporter.spark.out=test-output/SparkReport/Spark.html
+#extent.reporter.spark.config=src/test/resource/extent-config.xml
+
+#extent.reporter.spark.out=test-output/SparkReport/
+
+#screenshot.dir=test-output/Screenshot/
+#screenshot.rel.path=../Screenshot/
+#extent.reporter.pdf.start=true
+#extent.reporter.pdf.out=test output/PdfReport/ExtentPdf.pdf
+#basefolder.name=reports
+#basefolder.datetimepattern=d-MMM-YY HH-mm-ss
+#extent.reporter.spark.vieworder=dashboard,test,category,exception,author,device,log
+#systeminfo.os=Ubuntu
+#systeminfo.user=preyas
+#systeminfo.build=1.1
+#systeminfo.AppName=API Project
