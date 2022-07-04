@@ -1,0 +1,5710 @@
+Request method:	GET
+Request URI:	https://api.spotify.com/v1/browse/new-releases
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=600
+vary: Authorization
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:41:57 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "albums": {
+        "href": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
+        "items": [
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4kYSro6naA4h99UJvo89HB"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4kYSro6naA4h99UJvo89HB",
+                        "id": "4kYSro6naA4h99UJvo89HB",
+                        "name": "Cardi B",
+                        "type": "artist",
+                        "uri": "spotify:artist:4kYSro6naA4h99UJvo89HB"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/5K4W6rqBFWDnAN6FQUkS6x",
+                        "id": "5K4W6rqBFWDnAN6FQUkS6x",
+                        "name": "Kanye West",
+                        "type": "artist",
+                        "uri": "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3hcs9uc56yIGFCSy9leWe7"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3hcs9uc56yIGFCSy9leWe7",
+                        "id": "3hcs9uc56yIGFCSy9leWe7",
+                        "name": "Lil Durk",
+                        "type": "artist",
+                        "uri": "spotify:artist:3hcs9uc56yIGFCSy9leWe7"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2qTIltFPwJzsyssGeOwdRO"
+                },
+                "href": "https://api.spotify.com/v1/albums/2qTIltFPwJzsyssGeOwdRO",
+                "id": "2qTIltFPwJzsyssGeOwdRO",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273b629e669238964a725937c1b",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02b629e669238964a725937c1b",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851b629e669238964a725937c1b",
+                        "width": 64
+                    }
+                ],
+                "name": "Hot Shit (feat. Ye & Lil Durk)",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:2qTIltFPwJzsyssGeOwdRO"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7CajNmpbOovFoOoasH2HaY",
+                        "id": "7CajNmpbOovFoOoasH2HaY",
+                        "name": "Calvin Harris",
+                        "type": "artist",
+                        "uri": "spotify:artist:7CajNmpbOovFoOoasH2HaY"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1URnnhqYAYcrqrcwql10ft"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1URnnhqYAYcrqrcwql10ft",
+                        "id": "1URnnhqYAYcrqrcwql10ft",
+                        "name": "21 Savage",
+                        "type": "artist",
+                        "uri": "spotify:artist:1URnnhqYAYcrqrcwql10ft"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1aRWXKL4e4pFg6Z3ObHKKw"
+                },
+                "href": "https://api.spotify.com/v1/albums/1aRWXKL4e4pFg6Z3ObHKKw",
+                "id": "1aRWXKL4e4pFg6Z3ObHKKw",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2738b8956d4732f8225aeb6129c",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e028b8956d4732f8225aeb6129c",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048518b8956d4732f8225aeb6129c",
+                        "width": 64
+                    }
+                ],
+                "name": "New Money (feat. 21 Savage)",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:1aRWXKL4e4pFg6Z3ObHKKw"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/53XhwfbYqKCa1cC15pYq2q",
+                        "id": "53XhwfbYqKCa1cC15pYq2q",
+                        "name": "Imagine Dragons",
+                        "type": "artist",
+                        "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6yiXkzHvC0OTmhfDQOEWtS"
+                },
+                "href": "https://api.spotify.com/v1/albums/6yiXkzHvC0OTmhfDQOEWtS",
+                "id": "6yiXkzHvC0OTmhfDQOEWtS",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273fc915b69600dce2991a61f13",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02fc915b69600dce2991a61f13",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851fc915b69600dce2991a61f13",
+                        "width": 64
+                    }
+                ],
+                "name": "Mercury - Acts 1 & 2",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 32,
+                "type": "album",
+                "uri": "spotify:album:6yiXkzHvC0OTmhfDQOEWtS"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2o5jDhtHVPhrJdv3cEQ99Z"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2o5jDhtHVPhrJdv3cEQ99Z",
+                        "id": "2o5jDhtHVPhrJdv3cEQ99Z",
+                        "name": "Tiësto",
+                        "type": "artist",
+                        "uri": "spotify:artist:2o5jDhtHVPhrJdv3cEQ99Z"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/25uiPmTg16RbhZWAqwLBy5",
+                        "id": "25uiPmTg16RbhZWAqwLBy5",
+                        "name": "Charli XCX",
+                        "type": "artist",
+                        "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6R7Yy0sY9N8PNUhseegr2Q"
+                },
+                "href": "https://api.spotify.com/v1/albums/6R7Yy0sY9N8PNUhseegr2Q",
+                "id": "6R7Yy0sY9N8PNUhseegr2Q",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2731e8798f25a1997f0679b2382",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e021e8798f25a1997f0679b2382",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048511e8798f25a1997f0679b2382",
+                        "width": 64
+                    }
+                ],
+                "name": "Hot In It",
+                "release_date": "2022-06-30",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:6R7Yy0sY9N8PNUhseegr2Q"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4oLeXFyACqeem2VImYeBFe",
+                        "id": "4oLeXFyACqeem2VImYeBFe",
+                        "name": "Fred again..",
+                        "type": "artist",
+                        "uri": "spotify:artist:4oLeXFyACqeem2VImYeBFe"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/3iDLGLmecmdkmdxYmuol5d"
+                },
+                "href": "https://api.spotify.com/v1/albums/3iDLGLmecmdkmdxYmuol5d",
+                "id": "3iDLGLmecmdkmdxYmuol5d",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273e88a1b90870837f8f376457a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02e88a1b90870837f8f376457a",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851e88a1b90870837f8f376457a",
+                        "width": 64
+                    }
+                ],
+                "name": "Jungle",
+                "release_date": "2022-06-29",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:3iDLGLmecmdkmdxYmuol5d"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0BvkDsjIUla7X0k6CSWh1I"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0BvkDsjIUla7X0k6CSWh1I",
+                        "id": "0BvkDsjIUla7X0k6CSWh1I",
+                        "name": "Luke Bryan",
+                        "type": "artist",
+                        "uri": "spotify:artist:0BvkDsjIUla7X0k6CSWh1I"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/3XgzAqjFk10Vyspx8c7OEm"
+                },
+                "href": "https://api.spotify.com/v1/albums/3XgzAqjFk10Vyspx8c7OEm",
+                "id": "3XgzAqjFk10Vyspx8c7OEm",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2738f91cad3d6dea3929464b990",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e028f91cad3d6dea3929464b990",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048518f91cad3d6dea3929464b990",
+                        "width": 64
+                    }
+                ],
+                "name": "Country On",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:3XgzAqjFk10Vyspx8c7OEm"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2KEqzdPS7M5YwGmiuPTdr5"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2KEqzdPS7M5YwGmiuPTdr5",
+                        "id": "2KEqzdPS7M5YwGmiuPTdr5",
+                        "name": "Rina Sawayama",
+                        "type": "artist",
+                        "uri": "spotify:artist:2KEqzdPS7M5YwGmiuPTdr5"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/31uMGaqlOlC9QcKG8e7aVq"
+                },
+                "href": "https://api.spotify.com/v1/albums/31uMGaqlOlC9QcKG8e7aVq",
+                "id": "31uMGaqlOlC9QcKG8e7aVq",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2737b58e54da1490008d8b8a971",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e027b58e54da1490008d8b8a971",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048517b58e54da1490008d8b8a971",
+                        "width": 64
+                    }
+                ],
+                "name": "Catch Me In The Air",
+                "release_date": "2022-06-27",
+                "release_date_precision": "day",
+                "total_tracks": 2,
+                "type": "album",
+                "uri": "spotify:album:31uMGaqlOlC9QcKG8e7aVq"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/57vWImR43h4CaDao012Ofp",
+                        "id": "57vWImR43h4CaDao012Ofp",
+                        "name": "Steve Lacy",
+                        "type": "artist",
+                        "uri": "spotify:artist:57vWImR43h4CaDao012Ofp"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/69JpAhN3XgLkOsJ7MCtW4V"
+                },
+                "href": "https://api.spotify.com/v1/albums/69JpAhN3XgLkOsJ7MCtW4V",
+                "id": "69JpAhN3XgLkOsJ7MCtW4V",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739904ecb0b1148a128bdd5e36",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e029904ecb0b1148a128bdd5e36",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048519904ecb0b1148a128bdd5e36",
+                        "width": 64
+                    }
+                ],
+                "name": "Bad Habit",
+                "release_date": "2022-06-29",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:69JpAhN3XgLkOsJ7MCtW4V"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/13y7CgLHjMVRMDqxdx0Xdo"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/13y7CgLHjMVRMDqxdx0Xdo",
+                        "id": "13y7CgLHjMVRMDqxdx0Xdo",
+                        "name": "Gucci Mane",
+                        "type": "artist",
+                        "uri": "spotify:artist:13y7CgLHjMVRMDqxdx0Xdo"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6lXYbUYhqxR56YlzPe8NxW"
+                },
+                "href": "https://api.spotify.com/v1/albums/6lXYbUYhqxR56YlzPe8NxW",
+                "id": "6lXYbUYhqxR56YlzPe8NxW",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d1f69802be539108d02bb4f6",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d1f69802be539108d02bb4f6",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851d1f69802be539108d02bb4f6",
+                        "width": 64
+                    }
+                ],
+                "name": "All Dz Chainz (feat. Lil Baby)",
+                "release_date": "2022-06-29",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:6lXYbUYhqxR56YlzPe8NxW"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/37hAfseJWi0G3Scife12Il"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/37hAfseJWi0G3Scife12Il",
+                        "id": "37hAfseJWi0G3Scife12Il",
+                        "name": "City Girls",
+                        "type": "artist",
+                        "uri": "spotify:artist:37hAfseJWi0G3Scife12Il"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/0OhW9KGuhEaWt5kt9s5qKf"
+                },
+                "href": "https://api.spotify.com/v1/albums/0OhW9KGuhEaWt5kt9s5qKf",
+                "id": "0OhW9KGuhEaWt5kt9s5qKf",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273666e0e08b59a34f130be92fb",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02666e0e08b59a34f130be92fb",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851666e0e08b59a34f130be92fb",
+                        "width": 64
+                    }
+                ],
+                "name": "Good Love (feat. Usher)",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:0OhW9KGuhEaWt5kt9s5qKf"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3E6xrwgnVfYCrCs0ePERDz"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3E6xrwgnVfYCrCs0ePERDz",
+                        "id": "3E6xrwgnVfYCrCs0ePERDz",
+                        "name": "Wisin",
+                        "type": "artist",
+                        "uri": "spotify:artist:3E6xrwgnVfYCrCs0ePERDz"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0n6sKrG0xKAf8xmdqeNGke"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0n6sKrG0xKAf8xmdqeNGke",
+                        "id": "0n6sKrG0xKAf8xmdqeNGke",
+                        "name": "Los Legendarios",
+                        "type": "artist",
+                        "uri": "spotify:artist:0n6sKrG0xKAf8xmdqeNGke"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2pfBdekMfDRVf1MfDnwTSv"
+                },
+                "href": "https://api.spotify.com/v1/albums/2pfBdekMfDRVf1MfDnwTSv",
+                "id": "2pfBdekMfDRVf1MfDnwTSv",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273c8144539e4e221291a2f6710",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02c8144539e4e221291a2f6710",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851c8144539e4e221291a2f6710",
+                        "width": 64
+                    }
+                ],
+                "name": "Multimillo, Vol. 1",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 14,
+                "type": "album",
+                "uri": "spotify:album:2pfBdekMfDRVf1MfDnwTSv"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3g2yaL04Uapb5fxmwsUZgV"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3g2yaL04Uapb5fxmwsUZgV",
+                        "id": "3g2yaL04Uapb5fxmwsUZgV",
+                        "name": "Kylie Morgan",
+                        "type": "artist",
+                        "uri": "spotify:artist:3g2yaL04Uapb5fxmwsUZgV"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/5HLVKjqh4u4a3NQhnxpz7i"
+                },
+                "href": "https://api.spotify.com/v1/albums/5HLVKjqh4u4a3NQhnxpz7i",
+                "id": "5HLVKjqh4u4a3NQhnxpz7i",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2733c2bfc89328e41c6ff278b53",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e023c2bfc89328e41c6ff278b53",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048513c2bfc89328e41c6ff278b53",
+                        "width": 64
+                    }
+                ],
+                "name": "P.S.",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 7,
+                "type": "album",
+                "uri": "spotify:album:5HLVKjqh4u4a3NQhnxpz7i"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7tjVFCxJdwT4NdrTmjyjQ6"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7tjVFCxJdwT4NdrTmjyjQ6",
+                        "id": "7tjVFCxJdwT4NdrTmjyjQ6",
+                        "name": "Muni Long",
+                        "type": "artist",
+                        "uri": "spotify:artist:7tjVFCxJdwT4NdrTmjyjQ6"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/0XyanjnTAHtYlDuVErK3Jt"
+                },
+                "href": "https://api.spotify.com/v1/albums/0XyanjnTAHtYlDuVErK3Jt",
+                "id": "0XyanjnTAHtYlDuVErK3Jt",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27317399b367b12b227c41191cc",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0217399b367b12b227c41191cc",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485117399b367b12b227c41191cc",
+                        "width": 64
+                    }
+                ],
+                "name": "Public Displays Of Affection Too",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 5,
+                "type": "album",
+                "uri": "spotify:album:0XyanjnTAHtYlDuVErK3Jt"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1vyhD5VmyZ7KMfW5gqLgo5",
+                        "id": "1vyhD5VmyZ7KMfW5gqLgo5",
+                        "name": "J Balvin",
+                        "type": "artist",
+                        "uri": "spotify:artist:1vyhD5VmyZ7KMfW5gqLgo5"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7j6DKwmjbxvpQO8h914uEz"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7j6DKwmjbxvpQO8h914uEz",
+                        "id": "7j6DKwmjbxvpQO8h914uEz",
+                        "name": "Ryan Castro",
+                        "type": "artist",
+                        "uri": "spotify:artist:7j6DKwmjbxvpQO8h914uEz"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6uDeoe39q6zh4vNScJTTgr"
+                },
+                "href": "https://api.spotify.com/v1/albums/6uDeoe39q6zh4vNScJTTgr",
+                "id": "6uDeoe39q6zh4vNScJTTgr",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273c95af61a0cf34ddd924b9c3a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02c95af61a0cf34ddd924b9c3a",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851c95af61a0cf34ddd924b9c3a",
+                        "width": 64
+                    }
+                ],
+                "name": "Nivel De Perreo",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:6uDeoe39q6zh4vNScJTTgr"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4GvEc3ANtPPjt1ZJllr5Zl"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4GvEc3ANtPPjt1ZJllr5Zl",
+                        "id": "4GvEc3ANtPPjt1ZJllr5Zl",
+                        "name": "Bazzi",
+                        "type": "artist",
+                        "uri": "spotify:artist:4GvEc3ANtPPjt1ZJllr5Zl"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/61Es52Ztb8rT01ai0PEo8W"
+                },
+                "href": "https://api.spotify.com/v1/albums/61Es52Ztb8rT01ai0PEo8W",
+                "id": "61Es52Ztb8rT01ai0PEo8W",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ebbffec20f4d194f8dad89fb",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ebbffec20f4d194f8dad89fb",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851ebbffec20f4d194f8dad89fb",
+                        "width": 64
+                    }
+                ],
+                "name": "Miss America",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:61Es52Ztb8rT01ai0PEo8W"
+            },
+            {
+                "album_type": "compilation",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3NVrWkcHOtmPbMSvgHmijZ"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3NVrWkcHOtmPbMSvgHmijZ",
+                        "id": "3NVrWkcHOtmPbMSvgHmijZ",
+                        "name": "The Minions",
+                        "type": "artist",
+                        "uri": "spotify:artist:3NVrWkcHOtmPbMSvgHmijZ"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/6Kc0f1PCbWZLOmZNOyXYGN"
+                },
+                "href": "https://api.spotify.com/v1/albums/6Kc0f1PCbWZLOmZNOyXYGN",
+                "id": "6Kc0f1PCbWZLOmZNOyXYGN",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27341f523db053f4e4df509ec58",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0241f523db053f4e4df509ec58",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485141f523db053f4e4df509ec58",
+                        "width": 64
+                    }
+                ],
+                "name": "Minions: The Rise Of Gru (Original Motion Picture Soundtrack)",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 19,
+                "type": "album",
+                "uri": "spotify:album:6Kc0f1PCbWZLOmZNOyXYGN"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6Y64EaNqpqcZYTgs4c76gF"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6Y64EaNqpqcZYTgs4c76gF",
+                        "id": "6Y64EaNqpqcZYTgs4c76gF",
+                        "name": "jxdn",
+                        "type": "artist",
+                        "uri": "spotify:artist:6Y64EaNqpqcZYTgs4c76gF"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1O8TQDjg48bsvgdGGNcQPY"
+                },
+                "href": "https://api.spotify.com/v1/albums/1O8TQDjg48bsvgdGGNcQPY",
+                "id": "1O8TQDjg48bsvgdGGNcQPY",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27349e4acb8d2dbfeae04080b8b",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0249e4acb8d2dbfeae04080b8b",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485149e4acb8d2dbfeae04080b8b",
+                        "width": 64
+                    }
+                ],
+                "name": "28 (Songs for Cooper)",
+                "release_date": "2022-06-28",
+                "release_date_precision": "day",
+                "total_tracks": 2,
+                "type": "album",
+                "uri": "spotify:album:1O8TQDjg48bsvgdGGNcQPY"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/6dgwEwnK0YtDfS9XhRwBTG"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/6dgwEwnK0YtDfS9XhRwBTG",
+                        "id": "6dgwEwnK0YtDfS9XhRwBTG",
+                        "name": "Broken Bells",
+                        "type": "artist",
+                        "uri": "spotify:artist:6dgwEwnK0YtDfS9XhRwBTG"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1BvFdIWtys20Hm0sFVeqeT"
+                },
+                "href": "https://api.spotify.com/v1/albums/1BvFdIWtys20Hm0sFVeqeT",
+                "id": "1BvFdIWtys20Hm0sFVeqeT",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732b47605918580fcb6255d05c",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e022b47605918580fcb6255d05c",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048512b47605918580fcb6255d05c",
+                        "width": 64
+                    }
+                ],
+                "name": "We're Not In Orbit Yet…",
+                "release_date": "2022-06-29",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:1BvFdIWtys20Hm0sFVeqeT"
+            },
+            {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/5nvWOyAkfNgVLKESq4fOj2"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/5nvWOyAkfNgVLKESq4fOj2",
+                        "id": "5nvWOyAkfNgVLKESq4fOj2",
+                        "name": "Montell Fish",
+                        "type": "artist",
+                        "uri": "spotify:artist:5nvWOyAkfNgVLKESq4fOj2"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/5iA8uhhLMIfh8CUu6sJWd6"
+                },
+                "href": "https://api.spotify.com/v1/albums/5iA8uhhLMIfh8CUu6sJWd6",
+                "id": "5iA8uhhLMIfh8CUu6sJWd6",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2737ebcdf74ea335847adc33e8e",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e027ebcdf74ea335847adc33e8e",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048517ebcdf74ea335847adc33e8e",
+                        "width": 64
+                    }
+                ],
+                "name": "love you more than me",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 1,
+                "type": "album",
+                "uri": "spotify:album:5iA8uhhLMIfh8CUu6sJWd6"
+            },
+            {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3VY7IlU2547DIC1ca88lRH"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3VY7IlU2547DIC1ca88lRH",
+                        "id": "3VY7IlU2547DIC1ca88lRH",
+                        "name": "CalledOut Music",
+                        "type": "artist",
+                        "uri": "spotify:artist:3VY7IlU2547DIC1ca88lRH"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AE",
+                    "AG",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CD",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FJ",
+                    "FM",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GH",
+                    "GM",
+                    "GN",
+                    "GQ",
+                    "GR",
+                    "GT",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MN",
+                    "MO",
+                    "MR",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NE",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SV",
+                    "SZ",
+                    "TD",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TL",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VC",
+                    "VE",
+                    "VN",
+                    "VU",
+                    "WS",
+                    "XK",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1wNaIjk7zTye6VNdn3E2F1"
+                },
+                "href": "https://api.spotify.com/v1/albums/1wNaIjk7zTye6VNdn3E2F1",
+                "id": "1wNaIjk7zTye6VNdn3E2F1",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273c9483ae6330db0211bfaf64d",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02c9483ae6330db0211bfaf64d",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851c9483ae6330db0211bfaf64d",
+                        "width": 64
+                    }
+                ],
+                "name": "My Beautiful Reality",
+                "release_date": "2022-07-01",
+                "release_date_precision": "day",
+                "total_tracks": 11,
+                "type": "album",
+                "uri": "spotify:album:1wNaIjk7zTye6VNdn3E2F1"
+            }
+        ],
+        "limit": 20,
+        "next": "https://api.spotify.com/v1/browse/new-releases?offset=20&limit=20",
+        "offset": 0,
+        "previous": null,
+        "total": 100
+    }
+}
+Request method:	GET
+Request URI:	https://api.spotify.com/v1/browse/new-releases-wrong
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+cache-control: private, max-age=0
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+Content-Length: 0
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:41:59 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4/playlists
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Preyas Playlist",
+    "description": "Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 201 Created
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+location: https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:41:59 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "collaborative": false,
+    "description": "Preyas playlist description",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7DRHHy0bin8YNLSxwv8OXF"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF",
+    "id": "7DRHHy0bin8YNLSxwv8OXF",
+    "images": [
+        
+    ],
+    "name": "Preyas Playlist",
+    "owner": {
+        "display_name": "preyas",
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/316u2kbs3igfzhgmddihg5l72yr4"
+        },
+        "href": "https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4",
+        "id": "316u2kbs3igfzhgmddihg5l72yr4",
+        "type": "user",
+        "uri": "spotify:user:316u2kbs3igfzhgmddihg5l72yr4"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MSxlNWYyZWQ5NTczNTBhNDFhMTM2ZWMxM2RkNDJhOWU5NDVjODA4Y2Yy",
+    "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks",
+        "items": [
+            
+        ],
+        "limit": 100,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 0
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:7DRHHy0bin8YNLSxwv8OXF"
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4/playlists
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:00 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Missing required field: name"
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4/playlists
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:00 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Error parsing JSON."
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/users/316u2kbs3igfzhgmddihg5l72yr4/playlists-wrong
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Preyas Playlist",
+    "description": "Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 404 Not Found
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-type: application/json
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:01 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Service not found"
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/users/32kbs3igfzhgmddihg5l72yr4/playlists
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Preyas Playlist",
+    "description": "Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 403 Forbidden
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:02 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 403,
+        "message": "You cannot create a playlist for another user."
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/users/%3Auser_id/playlists
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Preyas Playlist",
+    "description": "Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:02 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid username"
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
+Proxy:			<none>
+Request params:	<none>
+Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:02 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "snapshot_id": "Myw4ZDk5NTZjNWEyZDM0ODZjYzBiZmUxODE1MGU4OTU0ZWM2MDBlYzZi"
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks123?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
+Proxy:			<none>
+Request params:	<none>
+Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+cache-control: private, max-age=0
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+Content-Length: 0
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:04 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy123
+Proxy:			<none>
+Request params:	<none>
+Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:04 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Invalid track uri: spotify:track:3RiPr603aXAoi4GHyXx0uy123"
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/playlists/2FohNt23E45MyKE8SuQv2CMH/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
+Proxy:			<none>
+Request params:	<none>
+Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:04 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/playlists/%3Aplaylistid/tracks?uris=spotify%3Atrack%3A3RiPr603aXAoi4GHyXx0uy
+Proxy:			<none>
+Request params:	<none>
+Query params:	uris=spotify:track:3RiPr603aXAoi4GHyXx0uy
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:05 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks?uris=
+Proxy:			<none>
+Request params:	<none>
+Query params:	uris=
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:05 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Error parsing JSON."
+    }
+}
+Request method:	POST
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks?uris=
+Proxy:			<none>
+Request params:	<none>
+Query params:	uris=
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:06 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Error parsing JSON."
+    }
+}
+Request method:	PUT
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Updated Preyas Playlist",
+    "description": "Updated Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 200 OK
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+Content-Length: 0
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:06 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Request method:	PUT
+Request URI:	https://api.spotify.com/v1/playlists/2FohNt23E45MyKE8SuQv2CMH
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Updated Preyas Playlist",
+    "description": "Updated Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:07 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	PUT
+Request URI:	https://api.spotify.com/v1/playlists/%3Aplaylistid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Updated Preyas Playlist",
+    "description": "Updated Preyas playlist description",
+    "public": false
+}
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:07 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	PUT
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "",
+    "description": "",
+    "public": false
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:08 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Attribute name is empty"
+    }
+}
+Request method:	PUT
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:08 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Error parsing JSON."
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": "spotify:track:3RiPr603aXAoi4GHyXx0uy"
+        }
+    ]
+}
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:09 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "snapshot_id": "NywxNmE0Zjk5MmU2Y2I2MjUxMmFhY2MyYmM4MWY4NWEzOTEzMWZjOTY2"
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/2FohNt23E45MyKE8SuQv2CMH/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": "spotify:track:3RiPr603aXAoi4GHyXx0uy"
+        }
+    ]
+}
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:09 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/%3Aplaylistid/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": "spotify:track:3RiPr603aXAoi4GHyXx0uy"
+        }
+    ]
+}
+HTTP/1.1 404 Not Found
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:10 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 404,
+        "message": "Invalid playlist Id"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": "spotify:track:3RiPr603aXAoi4GHyXx0uy123"
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:10 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "JSON body contains an invalid track uri: spotify:track:3RiPr603aXAoi4GHyXx0uy123"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            "uri": ""
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:10 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "JSON body contains an invalid track uri: "
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "tracks": [
+        {
+            
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:11 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "JSON body contains a track without URI."
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:11 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Missing tracks"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.spotify.com/v1/playlists/7DRHHy0bin8YNLSxwv8OXF/tracks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+content-type: application/json; charset=utf-8
+cache-control: private, max-age=0
+x-robots-tag: noindex, nofollow
+access-control-allow-origin: *
+access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-encoding: gzip
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+date: Mon, 04 Jul 2022 05:42:11 GMT
+server: envoy
+Via: HTTP/2 edgeproxy, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "error": {
+        "status": 400,
+        "message": "Missing tracks"
+    }
+}

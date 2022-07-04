@@ -178,8 +178,12 @@ git config user.name "new name"
 git config credential.username "new name"
 
 
+==========================================
+
+Jenkins Setup  : script console
 
 
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 =====================================
 
 Cookie based auth ::
