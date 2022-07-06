@@ -217,7 +217,7 @@
 					<version>3.0.0</version>
 			</plugin>
 			
-			<plugin>
+			<!-- <plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
 				</plugin>
@@ -239,11 +239,11 @@
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>2.8.2</version>
 				</plugin>
-				<!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+				site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle
 				<plugin>
 					<artifactId>maven-site-plugin</artifactId>
 					<version>3.7.1</version>
-				</plugin>
+				</plugin> -->
 		</plugins>
 	</build>
 </project>
