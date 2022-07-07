@@ -10,7 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import static io.restassured.RestAssured.*;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import io.restassured.authentication.AuthenticationScheme;
@@ -82,6 +81,25 @@ public class Utils {
 		return req;
 
 	}
+	
+	
+	public RequestSpecification jwt_requestspecification() throws FileNotFoundException, InterruptedException {
+
+		if (req == null) {
+			PrintStream log = new PrintStream(new FileOutputStream("jwtlogging.txt"));
+
+			RestAssured.baseURI = ConfigReader.init_prop().getProperty("bookstore_baseurl");
+
+			req = new RequestSpecBuilder().setBaseUri(ConfigReader.init_prop().getProperty("bookstore_baseurl"))
+					 .addFilter(RequestLoggingFilter.logRequestTo(log))
+					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
+
+			return req;
+		}
+		return req;
+
+	}
+	
 
 	
 	public static String auth2token() throws InterruptedException {

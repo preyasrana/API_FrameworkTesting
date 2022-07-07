@@ -13,6 +13,7 @@ import Resources.APIsList;
 import Resources.ConfigReader;
 import Resources.TestDataBuild;
 import Resources.Utils;
+import groovyjarjarpicocli.CommandLine.Spec;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -69,6 +70,14 @@ public class sample extends Utils {
 	public void add_user_payload_create_account() throws FileNotFoundException {
 
 		req = given().spec(basicauth_requestspecification()).body(testdata.new_user_create(username));
+
+	}
+	
+	
+	@Given("add user with username and password for jwt")
+	public void add_user_to_username_password() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(jwt_requestspecification()).body(testdata.new_user_create(username));
 
 	}
 
@@ -710,6 +719,13 @@ public class sample extends Utils {
 	public void assignbooktoUSer() throws FileNotFoundException {
 
 		req = given().spec(basicauth_requestspecification()).headers("Authorization", "Bearer " + token)
+				.body(testdata.post_assignbook_touser(userID, isbnid));
+	}
+	
+	@Given("assignbooktoUSer using jwt")
+	public void assignbooktoUSer_jwt() throws FileNotFoundException, InterruptedException {
+
+		req = given().spec(jwt_requestspecification()).headers("Authorization", "Bearer " + token)
 				.body(testdata.post_assignbook_touser(userID, isbnid));
 	}
 
