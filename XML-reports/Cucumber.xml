@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="4.422">
-    <testcase classname="Verify Basic Auth &amp; Bearer Token Functionality" name="Verify Create user API Successfully" time="2.664">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="4.096">
+    <testcase classname="Verify Basic Auth &amp; Bearer Token Functionality" name="Verify Create user API Successfully" time="2.761">
         <system-out>
             <![CDATA[Given add user with username and password...................................passed
 When user are call "postcreateuserapi" with "post" http request.............passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify Basic Auth &amp; Bearer Token Functionality" name="Verify if Getbookstore api functionality its working" time="0.503">
+    <testcase classname="Verify Basic Auth &amp; Bearer Token Functionality" name="Verify if Getbookstore api functionality its working" time="0.384">
         <system-out>
             <![CDATA[When user are call "getbooksapi" with "get" http request....................passed
 Then user verify status code is 200.........................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verify Basic Auth &amp; Bearer Token Functionality" name="Verify Create token functionality its working" time="0.541">
+    <testcase classname="Verify Basic Auth &amp; Bearer Token Functionality" name="Verify AssignBook to user API Successfully" time="0.708">
         <system-out>
-            <![CDATA[Given add user with username and password to create account.................passed
+            <![CDATA[Given add user with username and password for jwt...........................passed
 When userare call "generate_token" with "post" http request.................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify Basic Auth &amp; Bearer Token Functionality" name="Verify AssignBook to user API Successfully" time="0.47">
-        <system-out>
-            <![CDATA[Given assignbooktoUSer......................................................passed
+Given assignbooktoUSer using jwt............................................passed
 When user shouldbe call "post_Assign_book_user" with "post" http request....passed
 ]]>
         </system-out>
